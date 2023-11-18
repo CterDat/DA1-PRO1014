@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="resouce/assets/libs/icofont/icofont.min.css">
         <link href="resouce/assets/libs/flatpickr/flatpickr.min.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="resouce/assets/css/tailwind.min.css">
+        <link rel="stylesheet" href="resouce/css/form.css">
 
         
 
@@ -64,7 +65,7 @@
                                     <ul class="nav flex-col flex flex-wrap ps-0 mb-0 ms-2">
                                     
                                         <li class="nav-item relative block">
-                                            <a href="admin-products.html"
+                                            <a href="index.php?act=addsp"
                                                class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative   flex items-center decoration-0 px-3 py-3 group-data-[sidebar=brand]:hover:text-slate-200">
                                                 <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
                                                 Products
