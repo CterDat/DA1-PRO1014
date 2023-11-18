@@ -37,7 +37,7 @@
         <script src="resouce/assets/libs/mobius1-selectr/selectr.min.js"></script>
         <script src="resouce/assets/js/app.js"></script>
         <!-- JAVASCRIPTS -->
-        <script>    
+        <!-- <script>    
             FilePond.registerPlugin(FilePondPluginImagePreview);    
             // Get a reference to the file input element
             const inputElement = document.querySelectorAll('input[type="file"]');
@@ -56,7 +56,7 @@
                 taggable: true,
                 tagSeperators: [",", "|"]
             });
-        </script>
+        </script> -->
     </body>
 
 <!-- Mirrored from mannatthemes.com/robotech/default/admin-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 15:34:24 GMT -->
