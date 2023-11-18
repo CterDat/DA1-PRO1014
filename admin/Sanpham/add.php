@@ -28,13 +28,14 @@
                     </div>
                 </div><!--end container-->
             
-                <div class="xl:w-full  min-h-[calc(100vh-138px)] relative pb-14"> 
+                <div class="xl:w-full  min-h-[calc(100vh-138px)] relative pb-14">
+                    <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
                     <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 justify-between">
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3 xl:col-span-3">
                             <div class="w-full relative p-4"> 
-                                <label for="" class="font-medium text-sm text-slate-600 dark:text-slate-400">Upload Image</label>
+                                <label for="hinh" class="font-medium text-sm text-slate-600 dark:text-slate-400">Upload Image</label>
                                 <div class="w-full h-56 mx-auto  mb-4">
-                                    <input type="file" class="filepond h-56" name="hinh" />                                    
+                                    <input type="file" name="hinh" class="filepond h-56" accept="image/png, image/jpeg, image/gif"/>                                    
                                 </div>
                                 <!-- <div class="grid grid-cols-2 gap-2 ">
                                     <div class="col-span-1">
@@ -48,7 +49,7 @@
                         </div><!--end col-->
                         
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
-                        <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
+                        
                             <div class="w-full relative mb-4">  
                                 <div class="flex-auto p-0 md:p-4">                                   
                                     <div class="mb-2">
@@ -106,8 +107,9 @@
                                     </div> -->
 
                                     <div class="">
-                                        <button class="px-2 py-2 lg:px-4 bg-brand  text-white text-sm  rounded hover:bg-brand-600 border border-brand-500"><input type="submit" value="THÊM MỚI" name="themmoi"></button>
-                                        <button class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><input type="reset"></button>
+                                        <input type="submit" value="THÊM MỚI" name="themmoi" class="px-2 py-2 lg:px-4 bg-brand  text-white text-sm  rounded hover:bg-brand-600 border border-brand-500">
+                                        <input type="reset" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium">
+                                        <button class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><a href="index.php?act=lissp">Danh sách</a></button>
                                     </div>
                                 </div><!--end card-body--> 
                             </div><!--end card-->                                  
@@ -118,7 +120,7 @@
                         }
                         
                         ?>
-                        </form>
+                        </form>  
                         </div>
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-3 xl:col-span-3">
                             <div class="w-full relative mb-4">  
@@ -145,5 +147,6 @@
                                     </div>
                                 </div><!--end card-body--> 
                             </div><!--end card-->                                  
-                        </div><!--end col-->                        
-                    </div> <!--end grid-->
+                        </div><!--end col-->
+                                      
+                </div> <!--end grid-->

@@ -62,13 +62,13 @@
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                     if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
-                      } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                    }
-                    insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
+                        insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
                     
-                    $thongbao="Thêm thành công";
+                        $thongbao="Thêm thành công";
+                      } else {
+                        echo "Sorry, there was an error uploading your file.";
+                    }
+                    
                 }
                 $listdanhmuc = loadall_danhmuc();
                 // var_dump($listdanhmuc);
