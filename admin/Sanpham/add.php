@@ -37,14 +37,7 @@
                                 <div class="w-full h-56 mx-auto  mb-4">
                                     <input type="file" name="hinh" id="hinh" class="filepond h-56" >                                    
                                 </div>
-                                <!-- <div class="grid grid-cols-2 gap-2 ">
-                                    <div class="col-span-1">
-                                        <input type="file" class="filepond"/>
-                                    </div>
-                                    <div class="col-span-1">
-                                        <input type="file" class="filepond"/>
-                                    </div>
-                                </div> -->
+                                
                             </div><!--end card-->                                  
                         </div><!--end col-->
                         
