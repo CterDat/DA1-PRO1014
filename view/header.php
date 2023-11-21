@@ -26,6 +26,20 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="vendor/html5shiv.js"></script>
 		<![endif]-->
+		<style>
+			.top10 img{
+				width: 50px;
+				height: 50px;
+				float: left;
+				margin-right: 10px;
+				border-radius: 5px;
+				border: 1px #ccc solid;
+			}
+			.mb10{
+			margin-bottom: 10px;
+			}
+			
+		</style>
 	</head>
 
 
@@ -83,7 +97,7 @@
 							</div>
 							<div class="col-md-4 col-sm-5 col-xs-6 logo-responsive">
 								<div class="logo-area">
-									<a href="index.html" class="pull-left logo"><img src="images/logo/logo.png" alt="LOGO"></a>
+									<a href="index.php" class="pull-left logo"><img src="images/logo/logo.png" alt="LOGO"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-7 col-xs-6 pdt-14">
@@ -93,22 +107,38 @@
 							   				<i class="icon-photo"></i>
 							   			</div>
 							   			<div class="login-info">
-								   			<div class="welcome">Chào mừng!</div>
+										   <?php
+												if (isset($_SESSION['user'])) {
+													extract($_SESSION['user']);
+											?>
+								   					<div class="welcome">Chào mừng!
+													   <?=$user?>
+													</div>
+											
 									   		<!-- select menu -->
-									            <form action="#" class="select-form">
+									            
 							                        <div class="g-input f1 mb-30">
-							                            <select class="text-capitalize selectpicker" data-style="g-select" data-width="100%">
-							                                <option value="0" selected="">Đăng nhập</option>
-							                                <option value="1">Đăng nhập</option>
-							                                <option value="2">Đăng ký ở đây</option>
-							                            </select>
+													<?php if ($role==1) { ?>
+													<a href="admin/index.php" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Quản trị</a>
+													<?php } ?>
+														
+														<a href="index.php?act=thoat" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Thoát</a>
 							                        </div>
-							                    </form>
+													<?php
+
+												}else{
+												?>
+													<div class="g-input f1 mb-30">
+							                            <a href="view/taikhoan/login.php" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng nhập</a>
+														
+							                        </div>
+												
+												<?php } ?>
 								   		</div>
 							   		</div> 
 									<!-- End of .cart_list -->
 							    </div>
-							    <div class="cart_option float_left">
+							    <div class="cart_option float_left" style="margin: 0px;">
 							   		<button class="cart tran3s dropdown-toggle" id="cartDropdown"><i class="fa icon-icon-32846" aria-hidden="true"></i><span class="s_color_bg p_color">2</span></button>
 							   		<div class="cart-info">
 							   			<div>Giỏ hàng của tôi</div>

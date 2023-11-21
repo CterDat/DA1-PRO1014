@@ -278,15 +278,20 @@
 	        					        			
 		        			<div class="row">
 				            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
+								<?php
+                        		$i =0;
+                        		foreach ($spnew as $sp) {
+                            	extract($sp);
+								$linksp="index.php?act=sanphamct&idsp=".$id;
+                            	$hinh=$img_path.$img;
+					            echo '<div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
 					                <div class="inner-box">
 					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/1.png" alt=""><div class="product-model new">New</div></figure>
+					                        <figure class="image-box"><img src="'.$hinh.'" alt=""><div class="product-model new">New</div></figure>
 					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
+					                        	<h3><a href="#">'.$name.'</a></h3>
 					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
+					                            <div class="price">$12.99 <span class="prev-rate">'.$price.'</span></div>
 					                        </div>
 					                        <div class="overlay-box">
 					                        	<div class="inner">
@@ -307,326 +312,17 @@
 					                        </div>
 						                </div>
 					                </div>
-					            </div>
+					            	</div>';
+									}
+					            ?>
 					            
 					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/2.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/3.png" alt=""><div class="product-model hot">Hot</div></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/4.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/5.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                    <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/6.png" alt=""><div class="product-model new">New</div></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                   <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/7.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                   <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/8.png" alt=""><div class="product-model hot">Hot</div></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                   <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/12.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                   <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/13.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
-					                <div class="inner-box">
-					                   <div class="single-item center">
-					                        <figure class="image-box"><img src="images/shop/14.png" alt=""></figure>
-					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
-					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
-					                        </div>
-					                        <div class="overlay-box">
-					                        	<div class="inner">
-						                        	<div class="top-content">
-						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="#"><span class="icon-icon-32846"></span></a>
-																
-															</li>
-						                        			
-						                        			<li><a href="#"><span class="fa fa-heart-o"></span></a></li>
-						                        		</ul>
-						                        	</div>
-						                        	<div class="bottom-content">
-						                        		<h4><a href="#">It Contains:</a></h4>
-						                        		<p>35% of organic raisins 55% of oats and 10% of butter. </p>
-						                        	</div>
-					                        	</div>
-					                        </div>
-						                </div>
-					                </div>
-					            </div>
-					            <!--Default Item-->
-					            <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
+					            <!-- <div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
 					                <div class="inner-box">
 					                   <div class="single-item center">
 					                        <figure class="image-box"><img src="images/shop/15.png" alt=""></figure>
 					                        <div class="content">
-					                        	<h3><a href="shop-single.html">Turmeric Powder</a></h3>
+					                        	<h3><a href="">Turmeric Powder</a></h3>
 					                            <div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
 					                            <div class="price">$12.99 <span class="prev-rate">$14.99</span></div>
 					                        </div>
@@ -650,7 +346,7 @@
 					                        </div>
 						                </div>
 					                </div>
-					            </div>
+					            </div> -->
 					            
 			        		</div>
 			        	</div>
@@ -691,62 +387,30 @@
 										<h4>Sản phẩm phổ biến</h4>
 									</div>
 
-									<div class="best_selling_item clear_fix border">
-										<div class="img_holder float_left">
-											<img src="images/shop/9.png" alt="image">
-										</div> <!-- End of .img_holder -->
+									
+										
+										<?php
+											foreach ($dstop10 as $sp) {
+												extract($sp);
+												$linksp="index.php?act=sanphamct&idsp=".$id;
+												$img=$img_path.$img;
+												echo '
+													<div class=" clear_fix border">
+													<div class="float_left top10 mb10">
+														<img src="'.$img.'" alt="">
+														<a href="'.$linksp.'" class="text float_left">'.$name.'</a>
+													</div>
+													
+													
+													
+													</div>';
+											}
+										?>
+										 <!-- End of .img_holder -->
 
-										<div class="text float_left">
-											<a href="shop-single.html"><h6>Turmeric Powder</h6></a>
-											<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span>$ 15.00</span>
-										</div> <!-- End of .text -->
-									</div> <!-- End of .best_selling_item -->
-
-									<div class="best_selling_item clear_fix border">
-										<div class="img_holder float_left">
-											<img src="images/shop/10.png" alt="image">
-										</div> <!-- End of .img_holder -->
-
-										<div class="text float_left">
-											<a href="shop-single.html"><h6>Pure Jeans Coffee</h6></a>
-											<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span>$ 34.00</span>
-										</div> <!-- End of .text -->
-									</div> <!-- End of .best_selling_item -->
-
-									<div class="best_selling_item clear_fix">
-										<div class="img_holder float_left">
-											<img src="images/shop/11.png" alt="image">
-										</div> <!-- End of .img_holder -->
-
-										<div class="text float_left">
-											<a href="shop-single.html"><h6>Columbia Chocolate</h6></a>
-											<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-											</ul>
-											<span>$ 34.99</span>
-										</div> <!-- End of .text -->
-									</div> <!-- End of .best_selling_item -->
-								</div> <!-- End of .best_sellers -->
-
-
+								
+										 </div>
+										</div>					
 								<div class="sidebar_tags wow fadeInUp">
 	   								<div class="theme_inner_title">
 										<h4>product Tags</h4>

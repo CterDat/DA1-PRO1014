@@ -61,8 +61,9 @@
                     insert_taikhoan($email,$user,$pass,$address,$tel);
                     $thongbao="Đã đăng ký thành công. Vui lòng đăng nhập.";
                 }
-                include "view/taikhoan/dangky.php";
+                include "view/home.php";
                 break;
+        
             case 'dangnhap':
                 if (isset($_POST['dangnhap'])&&($_POST['dangnhap'])) {
                     $user=$_POST['user'];
@@ -70,13 +71,13 @@
                     $checkuser=checkuser($user,$pass);
                     if (is_array($checkuser)) {
                         $_SESSION['user']=$checkuser;
-                        header('location: index.php');
+                        
                     }else{
                         $thongbao="Tài khoản không tồn tại!";    
                     }
                     
                 }
-                include "view/taikhoan/dangky.php";
+                include "view/home.php";
                 break;
             case 'edit_taikhoan':
                 if (isset($_POST['capnhat'])&&($_POST['capnhat'])) {
@@ -155,7 +156,7 @@
             
             case 'thoat':
                 session_unset();
-                header('Location: index.php');
+                include "view/home.php";
                 break;
             default:
                 include "view/home.php";
