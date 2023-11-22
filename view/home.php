@@ -307,7 +307,7 @@
 																<input type="hidden" name="name" value="'.$name.'">
 																<input type="hidden" name="img" value="'.$img.'">
 																<input type="hidden" name="price" value="'.$price.'">
-																<i class="fa fa-sort-desc"></i><input type="submit" name="addtocart" value="Add to cart">
+																<i class="fa fa-sort-desc"></i><input type="submit" name="addtocart" value="Add to cart" style="width: 110px; color: green;">
 																
 															</span><button type="submit" name="addtocart" style="width: 40px;"><span class="icon-icon-32846"></span></button>
 															

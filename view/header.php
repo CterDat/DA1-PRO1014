@@ -37,6 +37,7 @@
 			}
 			.mb10{
 			margin-bottom: 10px;
+			
 			}
 
 		</style>
@@ -54,8 +55,8 @@
 					<div class="container">
 						<div class="pull-left header_left">
 							<ul>
-		        				<li><a href="#">Liên hệ số điện thoại : <span>+321 453 68 739</span></a></li>
-		        				<li><i class="fa fa-envelope-o s_color" aria-hidden="true"></i><a href="#">dct@gmail.com</a></li>
+		        				<li><a href="#">Liên hệ số điện thoại : <span>+84 357 717 435</span></a></li>
+		        				<li><i class="fa fa-envelope-o s_color" aria-hidden="true"></i><a href="#">datnvph34326@gmail.com</a></li>
 		        			</ul>
 						</div>
 
@@ -218,5 +219,3 @@
 				</div> 
 				<!-- End of .bottom_header -->
 			</header>
-
-			<body>
