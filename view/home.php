@@ -287,6 +287,7 @@
 					            echo '<div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
 					                <div class="inner-box">
 					                    <div class="single-item center">
+											
 					                        <figure class="image-box"><img src="'.$hinh.'" alt=""><div class="product-model new">New</div></figure>
 					                        <div class="content">
 					                        	<h3><a href="#">'.$name.'</a></h3>
@@ -295,14 +296,25 @@
 					                        </div>
 					                        <div class="overlay-box">
 					                        	<div class="inner">
+													
 						                        	<div class="top-content">
+														<form action="index.php?act=addtocart" method="post" class="fa">
 						                        		<ul>
 						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
-						                        			<li class="tultip-op"><span class="tultip"><i class="fa fa-sort-desc"></i>ADD TO CART</span><a href="giohang.html"><span class="icon-icon-32846"></span></a>
+															
+						                        			<li class="tultip-op"><span class="tultip">
+																<input type="hidden" name="id" value="'.$id.'">
+																<input type="hidden" name="name" value="'.$name.'">
+																<input type="hidden" name="img" value="'.$img.'">
+																<input type="hidden" name="price" value="'.$price.'">
+																<i class="fa fa-sort-desc"></i><input type="submit" name="addtocart" value="Add to cart">
 																
+															</span><button type="submit" name="addtocart" style="width: 40px;"><span class="icon-icon-32846"></span></button>
+															
 															</li>
 						                        			<li><a href=""><span class="fa fa-heart-o"></span></a></li>
 						                        		</ul>
+														</form>
 						                        	</div>
 						                        	<div class="bottom-content">
 						                        		<h4><a href="#">It Contains:</a></h4>
@@ -310,6 +322,7 @@
 						                        	</div>
 					                        	</div>
 					                        </div>
+											
 						                </div>
 					                </div>
 					            	</div>';

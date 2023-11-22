@@ -1,3 +1,5 @@
+
+</body>
 <!-- Footer************************* -->
 <footer>
 				<div class="main_footer">

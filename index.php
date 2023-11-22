@@ -119,7 +119,7 @@
                     
                 }
 
-                include "view/cart/viewcart.php";
+                include "view/addtocart/cart.php";
                 break;
             case 'delcart':
                 if (isset($_GET['idcart'])) {
@@ -131,7 +131,7 @@
                 break;
             case 'viewcart':
                 
-                include "view/cart/viewcart.php";
+                include "view/addtocart/cart.php";
                 break;
             case 'bill':
                 
