@@ -300,7 +300,7 @@
 						                        	<div class="top-content">
 														<form action="index.php?act=addtocart" method="post" class="fa">
 						                        		<ul>
-						                        			<li><a href="chitietsp.html"><span class="fa fa-eye"></span></a></li>
+						                        			<li><a href="index.php?act=sanphamct"><span class="fa fa-eye"></span></a></li>
 															
 						                        			<li class="tultip-op"><span class="tultip">
 																<input type="hidden" name="id" value="'.$id.'">
