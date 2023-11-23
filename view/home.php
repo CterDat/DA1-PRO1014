@@ -3,7 +3,7 @@
 				<div class="container">
 				  <nav class="menuzord pull-left" id="main_menu">
 					<ul class="menuzord-menu">
-					  <li><a href="index.html">Trang chủ</a></li>
+					  <li><a href="index.php">Trang chủ</a></li>
 					  <li><a href="shop.html">Giới thiệu</a></li>
 					  <li><a href="gallery-grid.html">Phòng trưng bày</a></li>
 					  <li><a href="contact.html">Liên hệ</a></li>
@@ -28,16 +28,16 @@
 
 
 			<!-- Banner ____________________________________ -->
-	        <div id="banner">
+			<div id="banner">
 	        	<div class="rev_slider_wrapper">
 					<!-- START REVOLUTION SLIDER 5.0 auto mode -->
 						<div id="main_slider" class="rev_slider" data-version="5.0">
 							<ul>
 								
 								<!-- SLIDE1  -->
-								<li data-index='rs-377' data-transition='curtain-1' data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='images/home/slide-1.jpg' data-rotate='0' data-saveperformance='off' data-title='Business Solutions' data-description='' >
+								<li data-index='rs-377' data-transition='curtain-1' data-slotamount='1' data-easein='default' data-easeout='default' data-masterspeed='default' data-thumb='images/home/banner1.png' data-rotate='0' data-saveperformance='off' data-title='Business Solutions' data-description='' >
 									<!-- MAIN IMAGE -->
-									<img src="images/home/slide-1.jpg"  alt="image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+									<img src="images/home/banner1.png"  alt="image"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 									<!-- LAYERS -->
 
 									<!-- LAYER NR. 1 -->
@@ -118,7 +118,7 @@
 										data-splitout="none" 
 										data-responsive_offset="on" 
 										style="z-index: 6; white-space: nowrap;">
-										<h5 class="cp-title-2">We are providing highest quality Organics Products for USA almo</h5>
+										<h5 class="cp-title-2">Shop Đồ Ăn Đêm: Đa dạng sản phẩm độc đáo - Trải nghiệm tuyệt vời cho đêm dài</h5>
 									</div>
 
 
@@ -130,9 +130,9 @@
 
 
 								<!-- SLIDE2  -->
-								<li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/slide-2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Successful Careers" data-description="">
+								<li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/banner3.png"  data-rotate="0"  data-saveperformance="off"  data-title="Successful Careers" data-description="">
 									<!-- MAIN IMAGE -->
-									<img src="images/home/slide-2.jpg"  alt=""  data-bgposition="top center" class="rev-slidebg" data-no-retina>
+									<img src="images/home/banner2.png"  alt=""  data-bgposition="top center" class="rev-slidebg" data-no-retina>
 									<!-- LAYERS -->
 									<div class="tp-caption tp-resizeme" 
 										data-x="['center','center','center','center']" data-hoffset="['80','80','80','80']" 
@@ -161,8 +161,8 @@
 					                    data-splitin="none" 
 					                    data-splitout="none"                         
 					                    data-start="1000">
-					                    <div class="banner-caption-h1">Get Blackberry <br>Pack With 50% Off</div>
-					                    <div class="banner-caption-p"><p>Great explorer of the truth, the master-builder of human happiness no sed one rejects <br>dislikes, or avoids pleasure itself, because it is pleasure.</p></div>
+					                    <div class="banner-caption-h1">Nhận gói Blackberry <br>Với mức giảm giá 50%</div>
+					                    <div class="banner-caption-p"><p>Đồ ăn đêm độc đáo và thỏa mãn khẩu vị - Khám phá tuyệt phẩm tại Shop Đồ Ăn Đêm của chúng tôi.</p></div>
 					                    <a href="#" class="thm-btn contuct-us">shop now</a>
 					                </div>
 								</li>
@@ -171,9 +171,9 @@
 
 							
 								<!-- SLIDE3  -->
-								<li data-index="rs-20" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/slide-3.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Your Success" data-description="">
+								<li data-index="rs-20" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/home/banner3.png"  data-rotate="0"  data-saveperformance="off"  data-title="Your Success" data-description="">
 									<!-- MAIN IMAGE -->
-									<img src="images/home/slide-3.jpg"  alt=""  data-bgposition="top center"  class="rev-slidebg" data-no-retina>
+									<img src="images/home/banner3.png"  alt=""  data-bgposition="top center"  class="rev-slidebg" data-no-retina>
 									<!-- LAYERS -->
 									
 
@@ -221,8 +221,8 @@
 					                    data-splitout="none" 
 					                    data-responsive_offset="on"                         
 					                    data-start="1400">  
-					                    <div class="banner-caption-h3">With Your Affortable</div>                  
-					                    <div class="banner-caption-p"><p>Great explorer of the truth, the master-builder of human happin</p></div>                  
+					                    <div class="banner-caption-h3">Với sự dễ chịu của bạn</div>                  
+					                    <div class="banner-caption-p"><p>Khám phá hương vị đêm tuyệt vời - Shop Đồ Ăn Đêm đa dạng và ngon miệng</p></div>                  
 					                    <a href="#" class="color1-bg contuct-us">shop now</a>
 					                </div>
 								</li>
@@ -239,25 +239,25 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12t">
-							<div class="item wow fadeInLef" style="background-image: url(images/about/1.jpg);">
+							<div class="item wow fadeInLef" style="background-image: url(images/about/6.png);">
 								<div class="offer-sec">
-									<div class="inner-title">Dành cho tất cả mỹ phẩm<div class="offer"><span>30% <br>TẮT</span></div></div>
+									<div class="inner-title">Dành cho tất cả đồ ăn<div class="offer"><span>30% <br>OFF</span></div></div>
 								</div>
 								<div class="content">
-									<h3>Chúng tôi phát triển vẻ đẹp</h3>
-									<p>Một thực tế đã được chứng minh từ lâu là độc giả sẽ <br>bị phân tâm bởi nội dung có thể đọc được của một trang khi <br> looking organic cosmetics.</p>
+									<h3>Chúng tôi phát triển </h3>
+									<p>Shop Đồ Ăn Đêm: Sự Kết Hợp Hoàn Hảo Giữa <br> Đa Dạng Hương Vị và Chất Lượng Tự Nhiên - Tạo <br> Nên Trải Nghiệm Độc Đáo Cho Đêm Dài của Bạn</p>
 									<div class="link-btn"><a href="#" class="tran3s">More Products<span class="fa fa-sort-desc"></span></a></div>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12t">
-							<div class="item wow fadeInRight" style="background-image: url(images/about/2.jpg);">
+							<div class="item wow fadeInRight" style="background-image: url(images/about/7.png);">
 								<div class="offer-sec">
-									<div class="inner-title">For All Cosmetics<div class="offer"><span>30% <br>OFF</span></div></div>
+									<div class="inner-title">Dành cho tất cả đồ uống<div class="offer"><span>30% <br>OFF</span></div></div>
 								</div>
 								<div class="content">
-									<h3>We Grow Beauty</h3>
-									<p>It is a long established fact that a reader will be <br> distracted by the readable content of a page when <br> looking organic cosmetics.</p>
+									<h3>Chúng tôi phát triển</h3>
+									<p>Thưởng thức đêm với đồ uống đa dạng: Shop <br> Đồ Uống độc đáo và chất lượng tự nhiên - Tạo <br> nên trải nghiệm tuyệt vời cho đêm dài của bạn</p>
 									<div class="link-btn"><a href="#" class="tran3s">More Products<span class="fa fa-sort-desc"></span></a></div>
 								</div>
 							</div>
@@ -300,7 +300,7 @@
 						                        	<div class="top-content">
 														<form action="index.php?act=addtocart" method="post" class="fa">
 						                        		<ul>
-						                        			<li><a href="index.php?act=sanphamct"><span class="fa fa-eye"></span></a></li>
+						                        			<li><a href="'.$linksp.'"><span class="fa fa-eye"></span></a></li>
 															
 						                        			<li class="tultip-op"><span class="tultip">
 																<input type="hidden" name="id" value="'.$id.'">

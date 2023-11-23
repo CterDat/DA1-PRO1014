@@ -33,13 +33,96 @@
 				float: left;
 				margin-right: 10px;
 				border-radius: 5px;
-				border: 1px #ccc solid;
+		
 			}
 			.mb10{
 			margin-bottom: 10px;
-			
 			}
+			/* CSS cho phần top10 a.text */
+.top10 a.text {
+  /* Các thuộc tính của đường dẫn văn bản */
+  display: block;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 11px; /* Kích thước font chữ */
+  color: #000;
+  text-decoration: none;
+}
+          /* CSS cho phần best_sellers */
+.best_sellers {
+  /* Các thuộc tính của best_sellers */
+  clear: both;
+  animation-name: fadeInUp;
+}
 
+/* CSS cho phần theme_inner_title */
+.theme_inner_title h4 {
+  /* Các thuộc tính của theme_inner_title */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* CSS cho phần clear_fix */
+.clear_fix::after {
+  /* Các thuộc tính của clear_fix */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* CSS cho phần border */
+/* CSS cho phần border */
+.border {
+  /* Các thuộc tính của border */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px; /* Bo tròn viền */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* CSS cho phần border:hover */
+.border:hover {
+  /* Các thuộc tính của border khi hover */
+  border-color: #ff0000; /* Màu viền khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+}
+
+/* CSS cho phần float_left */
+.float_left {
+  /* Các thuộc tính của float_left */
+  float: left;
+}
+
+/* CSS cho phần top10 */
+.top10 {
+  /* Các thuộc tính của top10 */
+  margin-bottom: 10px;
+}
+
+/* CSS cho phần top10 img */
+.top10 img {
+  /* Các thuộc tính của hình ảnh */
+  width: 20px;
+  height: auto;
+}
+
+/* CSS cho phần top10 a.text */
+.top10 a.text {
+  /* Các thuộc tính của đường dẫn văn bản */
+  display: block;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* CSS cho phần top10 a.text:hover */
+.top10 a.text:hover {
+  /* Các thuộc tính của đường dẫn văn bản khi hover */
+  text-decoration: underline;
+}
 		</style>
 	</head>
 
@@ -90,15 +173,15 @@
 						<div class="row">
 							<div class="col-md-4 col-sm-12 col-xs-12">
 								<div class="search-box">
-									<form action="#" class="clearfix">
-										<input type="text" placeholder="Search...">
-										<button><i class="fa fa-search"></i></button>
+									<form action="index.php?act=sanpham" class="clearfix" method="post">
+										<input type="text" name="kyw" placeholder="Search...">
+										<button name="timkiem" value="timkiem"><i class="fa fa-search"></i></button>
 									</form>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-5 col-xs-6 logo-responsive">
 								<div class="logo-area">
-									<a href="index.php" class="pull-left logo"><img src="images/logo/logo.png" alt="LOGO"></a>
+									<a href="index.php" class="pull-left logo"><img src="images/logo/log.png" alt="LOGO"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-7 col-xs-6 pdt-14">

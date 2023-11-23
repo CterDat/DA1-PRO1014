@@ -885,11 +885,11 @@ select.g-select[option="selected"] {
 }
 
 .theme_menu.color1_bg{
-  background: #654321;
+  background: orange;
 }
 .theme_menu.color1_bg .menuzord-menu li.current_page a,
 .theme_menu.color1_bg .menuzord-menu li a:active {
-  background: brown;
+  background: orange;
   color: white;
 }
 
