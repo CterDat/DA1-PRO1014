@@ -1,3 +1,4 @@
+
 <div class="ltr:flex flex-1 rtl:flex-row-reverse">
             <div class="page-wrapper relative ltr:ms-auto rtl:me-auto rtl:ms-0 w-[calc(100%-260px)] px-4 pt-[64px] duration-300">
                 <div class="xl:w-full">        
@@ -29,51 +30,51 @@
                 </div><!--end container-->
             
                 <div class="xl:w-full  min-h-[calc(100vh-138px)] relative pb-14">
-                    <form action="index.php?act=adddm" method="post" >
+                    
                     <!-- <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 justify-between">  -->
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                             <div class="w-full relative mb-4">  
                                 <div class="flex-auto p-0 md:p-4">                                 
                                     <table class="table table-striped">
                                     <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">Nội dung</th>
-                                        <th scope="col">Iduser</th>
-                                        <th scope="col">Idpro</th>
-                                        <th scope="col">Ngày bình luận</th>
-                                        <th scope="col"></th>
+                                        
+                                        <th scope="col">MÃ DANH MỤC</th>
+                                        <th scope="col">TÊN DANH MỤC</th>
+                                        <th scope="col">SỐ LƯỢNG</th>
+                                        <th scope="col">GIÁ CAO NHẤT</th>
+                                        <th scope="col">GIÁ THẤP NHẤT</th>
+                                        <th scope="col">GIÁ TRUNG BÌNH</th>
+                                        
                                     </tr>
                                     <?php
-                                       foreach ($listbinhluan as $binhluan) {
-                                        extract($binhluan);
-                                        $xoabl="index.php?act=xoabl&id=".$id;
-    
+                                       foreach ($listthongke as $thongke) {
+                                        extract($thongke);
                                         echo '<tr>
-                                        <td><input type="checkbox" name="" id=""></td>
-                                        <td>'.$id.'</td>
-                                        <td>'.$noidung.'</td>
-                                        <td>'.$iduser.'</td>
-                                        <td>'.$idpro.'</td>
-                                        <td>'.$ngaybinhluan.'</td>
-                                        <td></a> <a href="'.$xoabl.'"> <input type="button" value="Xóa"></a></td>
+                                            <td>'.$madm.'</td>
+                                            <td>'.$tendm.'</td>
+                                            <td>'.$countsp.'</td>
+                                            <td>'.$maxprice.'</td>
+                                            <td>'.$minprice.'</td>
+                                            <td>'.$avgprice.'</td>
                                     </tr>';
                                     }
                                     ?>
                                     
                                     </table>
-                                    
+                                    <div class="">
+                                        <button class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><a href="index.php?act=bieudo">Xem biểu đồ</a></button>
+                                    </div>
                                 </div><!--end card-body--> 
                             </div><!--end card-->                                  
                         <!--end col-->
                         <?php
-                        if (isset($thongbao)&&($thongbao!="")) {
-                            echo $thongbao;
-                        }
+                        
                         
                         ?>
-                        </form>  
+                       
                         </div>
                         
                                       
 </div> <!--end grid-->
+
+

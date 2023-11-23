@@ -1,3 +1,6 @@
+
+
+
 <div class="ltr:flex flex-1 rtl:flex-row-reverse">
             <div class="page-wrapper relative ltr:ms-auto rtl:me-auto rtl:ms-0 w-[calc(100%-260px)] px-4 pt-[64px] duration-300">
                 <div class="xl:w-full">        
@@ -34,42 +37,46 @@
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                             <div class="w-full relative mb-4">  
                                 <div class="flex-auto p-0 md:p-4">                                 
-                                    <table class="table table-striped">
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">Nội dung</th>
-                                        <th scope="col">Iduser</th>
-                                        <th scope="col">Idpro</th>
-                                        <th scope="col">Ngày bình luận</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                    <?php
-                                       foreach ($listbinhluan as $binhluan) {
-                                        extract($binhluan);
-                                        $xoabl="index.php?act=xoabl&id=".$id;
-    
-                                        echo '<tr>
-                                        <td><input type="checkbox" name="" id=""></td>
-                                        <td>'.$id.'</td>
-                                        <td>'.$noidung.'</td>
-                                        <td>'.$iduser.'</td>
-                                        <td>'.$idpro.'</td>
-                                        <td>'.$ngaybinhluan.'</td>
-                                        <td></a> <a href="'.$xoabl.'"> <input type="button" value="Xóa"></a></td>
-                                    </tr>';
-                                    }
-                                    ?>
-                                    
-                                    </table>
+                                <div id="piechart"></div>
+
+                                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                                <script type="text/javascript">
+                                // Load google charts
+                                google.charts.load('current', {'packages':['corechart']});
+                                google.charts.setOnLoadCallback(drawChart);
+
+                                // Draw the chart and set the chart values
+                                function drawChart() {
+                                  var data = google.visualization.arrayToDataTable([
+                                  ['Danh mục', 'Số lượng sản phẩm'],
+                                  <?php
+                                  $tongdm=count($listthongke);
+                                  $i=1;
+                                  foreach ($listthongke as $thongke){
+                                    extract($thongke);
+                                    if($i==$tongdm) $dauphay=""; else $dauphay=",";
+                                    echo"['".$thongke['tendm']."', ".$thongke['countsp']."]".$dauphay;
+                                    $i+=1;
+                                  }
+                                  ?>
+                                  
+                                ]);
+
+                                  // Optional; add a title and set the width and height of the chart
+                                  var options = {'title':'Thống kê sản phẩm theo danh mục', 'width':550, 'height':400};
+
+                                  // Display the chart inside the <div> element with id="piechart"
+                                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                  chart.draw(data, options);
+                                }
+                                </script>
                                     
                                 </div><!--end card-body--> 
                             </div><!--end card-->                                  
                         <!--end col-->
                         <?php
-                        if (isset($thongbao)&&($thongbao!="")) {
-                            echo $thongbao;
-                        }
+                        
                         
                         ?>
                         </form>  
@@ -77,3 +84,5 @@
                         
                                       
 </div> <!--end grid-->
+
+
