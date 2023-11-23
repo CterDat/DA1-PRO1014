@@ -88,7 +88,7 @@
 
                                     <div class="">
                                         <input type="hidden" name="id" value="<?=$id?>">
-                                        <input type="submit" value="Cập nhật" name="capnhat" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><a href="index.php?act=addsp">
+                                        <input type="submit" value="Cập nhật" name="capnhat" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium">
                                         <input type="reset" value="Nhập Lại" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><a href="index.php?act=addsp">
                                         <button class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"><a href="index.php?act=lissp">Danh Sách</a></button>
                                     </div>
