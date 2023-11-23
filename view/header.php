@@ -206,7 +206,7 @@
 							   			<div class="cart_total clear_fix">
 
 							   				<span class="total font_fix float_left">Tổng cộng - 140$</span>
-							   				<a href="giohang.html" class="s_color_bg float_right tran3s">Xem giỏ hàng</a>
+							   				<a href="index.php?act=viewcart" class="s_color_bg float_right tran3s">Xem giỏ hàng</a>
 							   			</div>
 							   		</div> <!-- End of .cart_list -->
 							    </div>
