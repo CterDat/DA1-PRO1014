@@ -8,9 +8,9 @@
     
     include "global.php";
 
-    if (!isset($_SESSION['mycart'])) {
-        $_SESSION['mycart'] =[];
-    }
+    // if (!isset($_SESSION['mycart'])) {
+    //     $_SESSION['mycart'] =[];
+    // }
     
     $spnew=loadall_sanpham_home();
     $dsdm=loadall_danhmuc();
@@ -58,7 +58,7 @@
             case "order":
             if (isset($_SESSION['cart'])) {
                 $cart = $_SESSION['cart'];
-                // print_r($cart);
+                
                 if (isset($_POST['order_confirm'])) {
                     $txthoten = $_POST['txthoten'];
                     $txttel = $_POST['txttel'];

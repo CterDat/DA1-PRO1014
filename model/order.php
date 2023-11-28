@@ -2,7 +2,7 @@
 
 function addOrder($id_user, $hoten, $sdt, $email, $diachi, $tongtien, $pttt){
     $sql="INSERT INTO tbl_order (id_user, hoten, sdt, email, diachi, tongtien, pttt) VALUES ($id_user, '$hoten', '$sdt', '$email', '$diachi', $tongtien, $pttt);";
-    $id=pdo_execute($sql);
+    $id=pdo_executeid($sql);
     return $id;
 }
 

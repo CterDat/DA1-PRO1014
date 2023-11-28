@@ -1,5 +1,5 @@
 
-</body>
+
 <!-- Footer************************* -->
 <footer>
 				<div class="main_footer">
@@ -101,7 +101,6 @@
 
 
 		<!-- Js File_________________________________ -->
-
 		<!-- j Query -->
 		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 		<!-- Bootstrap JS -->
@@ -148,6 +147,5 @@
 
 		</div> <!-- End of .main_page -->
 	</body>
-
 <!-- Mirrored from st.ourhtmldemo.com/template/organic_store/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 14:33:49 GMT -->
 </html>

@@ -26,7 +26,6 @@
 
 
 
-
 			<!-- Banner ____________________________________ -->
 			<div id="banner">
 	        	<div class="rev_slider_wrapper">
@@ -279,7 +278,7 @@
 		        			<div class="row">
 				            
 								<?php
-                        		$i =0;
+                        		$i = 0;
                         		foreach ($spnew as $sp) :
                             	extract($sp);
 								$linksp="index.php?act=sanphamct&idsp=".$id;
@@ -308,7 +307,7 @@
 																<!-- <span class="tultip"> -->
 															
 																<!-- <i class="fa fa-sort-desc"></i><button type="submit" name="addtocart" value="Add to cart" style="width: 110px; color: green;" > -->
-																<button data-id="<?= $id ?>"  style="width: 40px;" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)"><span class="icon-icon-32846"></span></button>
+																<button data-id="<?= $id ?>"  style="width: 42px;" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)"><span class="icon-icon-32846"></span></button>
 																
 															
 															</li>
@@ -1071,7 +1070,7 @@
 			        </div>
 			    </div>
 			</section>
-			<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     let totalProduct = document.getElementById('totalProduct');
     function addToCart(productId, productName, productPrice) {
