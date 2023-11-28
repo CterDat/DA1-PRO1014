@@ -302,3 +302,36 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE `order_detail` (
+  `id_order_detail` int(11) NOT NULL,
+  `id_order` int(11) NOT NULL,
+  `id_pro` int(11) NOT NULL,
+  `giamua` int(11) NOT NULL,
+  `soluong` int(11) NOT NULL,
+  `thanhtien` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE `tbl_order` (
+  `id_order` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `hoten` varchar(50) NOT NULL,
+  `sdt` varchar(15) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `diachi` int(100) NOT NULL,
+  `tongtien` int(11) NOT NULL,
+  `pttt` tinyint(4) NOT NULL COMMENT '1. Thanh toán khi nhận hàng\r\n2. Chuyển khoản',
+  `ngaydathang` datetime NOT NULL DEFAULT current_timestamp(),
+  `trangthai` tinyint(4) NOT NULL DEFAULT 1 COMMENT '1. Đang chờ duyệt\r\n2. Đã xác nhận\r\n3. Đang vận chuyển\r\n4. Hoàn thành'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `tbl_order`
+ADD PRIMARY KEY (`id_order`);
+
+ALTER TABLE `order_detail`
+MODIFY `id_order_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+ALTER TABLE `tbl_order`
+MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+

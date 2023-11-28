@@ -4,28 +4,16 @@ if (isset($_SESSION['mes'])) {
     unset($_SESSION['mes']);
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <link rel="stylesheet" href="../css/dangnhap.css">
-    
-</head>
-
 <body>
     <section class="d-flex">
         <div class="img-bg">
             
-            <img src="../css/images/1.jpg" alt="Hình Ảnh Minh Họa">
+            <img src="view/css/images/1.jpg" alt="Hình Ảnh Minh Họa">
         </div>
         <div class="noi-dung">
             <div class="form">
                 <h2>LOGIN</h2>
-                <form action="../../index.php?act=dangnhap" method="POST">
+                <form action="index.php?act=dangnhap" method="POST">
                     <div class="input-form">
                         <span>Tên Người Dùng</span>
                         <input type="text" name="user">
@@ -56,4 +44,3 @@ if (isset($_SESSION['mes'])) {
 
 </body>
 
-</html>
