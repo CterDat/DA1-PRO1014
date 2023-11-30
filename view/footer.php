@@ -58,14 +58,14 @@
 							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_contact">
 								<h5>Get In Touch</h5>
 								<ul class="list catagories">
-		                            <li><a href="#"><i class="fa fa-envelope"></i>Organic store@gmail.com</a></li>
-		                            <li><a href="#"><i class="fa fa-phone"></i>+91 (321) 758 142 5698</a></li>
+		                            <li><a href="#"><i class="fa fa-envelope"></i>DTCshops@gmail.com</a></li>
+		                            <li><a href="#"><i class="fa fa-phone"></i>+84 357 717 435</a></li>
 		                            <li><a href="#"><i class="fa fa-home"></i>No 271, Red Cross Building, Modern Street, Newyork City, USA.</a></li>
 		                        </ul>
 
 		                        <h5>Business Hours</h5>
 								<div class="list Business">
-		                            <p>Monday - Friday: 09.00am to 07.00pm <br>Saturday: 10.00am to 05.00pm <br>Sunday: <span>Closed</span></p>
+		                            <p>Monday - Friday: 09.00am to 03.00am <br>Saturday: 10.00am to 05.00am <br>Sunday: <span>Closed</span></p>
 		                        </div>
 		                        
 							</div> <!-- End of .footer_contact -->
@@ -108,7 +108,7 @@
 
 		<!-- Vendor js _________ -->
 		<!-- Google map js -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script> <!-- Gmap Helper -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script> Gmap Helper
 		<script src="js/gmap.js"></script>
 		<!-- owl.carousel -->
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>

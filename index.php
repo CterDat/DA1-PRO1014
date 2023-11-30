@@ -8,9 +8,7 @@
     
     include "global.php";
 
-    // if (!isset($_SESSION['mycart'])) {
-    //     $_SESSION['mycart'] =[];
-    // }
+    ob_start();
     
     $spnew=loadall_sanpham_home();
     $dsdm=loadall_danhmuc();
@@ -118,12 +116,13 @@
                     $tel=$_POST['tel'];
                     insert_taikhoan($email,$user,$pass,$address,$tel);
                     $thongbao="Đã đăng ký thành công. Vui lòng đăng nhập.";
+                    header('Location: index.php?act=dangnhap');
                 }
                 include "view/taikhoan/register.php";
                 break;
         
             case 'dangnhap':
-                include "view/taikhoan/login.php";
+                
                 if (isset($_POST['dangnhap'])&&($_POST['dangnhap'])) {
                     $user=$_POST['user'];
                     $pass=$_POST['pass'];
@@ -138,7 +137,7 @@
                     }
                     
                 }
-                
+                include "view/taikhoan/login.php";
                 break;
             case 'edit_taikhoan':
                 if (isset($_POST['capnhat'])&&($_POST['capnhat'])) {
@@ -236,7 +235,7 @@
             
             case 'thoat':
                 session_unset();
-                // header('Location: index.php');
+                header('Location: index.php');
                 include "view/home.php";
                 break;
             default:
@@ -248,4 +247,5 @@
     }
     
     include "view/footer.php";
+    ob_end_flush();
 ?>

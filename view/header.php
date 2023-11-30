@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-<!-- Mirrored from st.ourhtmldemo.com/template/organic_store/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 14:31:30 GMT -->
-<head>
+<head>	
 		<meta charset="UTF-8">
-		<!-- For IE -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Shop Đồ Ăn Đêm</title>
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="images/fav-icon/apple-icon-57x57.png">
-
-
-
 		<!-- Custom Css -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="view/css/dangnhap.css">
+		<link rel="stylesheet" href="../css/dangki.css">
 		<style>
 			.top10 img{
 				width: 50px;
@@ -33,90 +28,90 @@
 			margin-bottom: 10px;
 			}
 			/* CSS cho phần top10 a.text */
-	.top10 a.text {
-	/* Các thuộc tính của đường dẫn văn bản */
-	display: block;
-	font-weight: bold;
-	margin-left: 10px;
-	font-size: 11px; /* Kích thước font chữ */
-	color: #000;
-	text-decoration: none;
-	}
-			/* CSS cho phần best_sellers */
-	.best_sellers {
-	/* Các thuộc tính của best_sellers */
-	clear: both;
-	animation-name: fadeInUp;
-	}
+		.top10 a.text {
+		/* Các thuộc tính của đường dẫn văn bản */
+		display: block;
+		font-weight: bold;
+		margin-left: 10px;
+		font-size: 11px; /* Kích thước font chữ */
+		color: #000;
+		text-decoration: none;
+		}
+				/* CSS cho phần best_sellers */
+		.best_sellers {
+		/* Các thuộc tính của best_sellers */
+		clear: both;
+		animation-name: fadeInUp;
+		}
 
-	/* CSS cho phần theme_inner_title */
-	.theme_inner_title h4 {
-	/* Các thuộc tính của theme_inner_title */
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	}
+		/* CSS cho phần theme_inner_title */
+		.theme_inner_title h4 {
+		/* Các thuộc tính của theme_inner_title */
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		}
 
-	/* CSS cho phần clear_fix */
-	.clear_fix::after {
-	/* Các thuộc tính của clear_fix */
-	content: "";
-	display: block;
-	clear: both;
-	}
+		/* CSS cho phần clear_fix */
+		.clear_fix::after {
+		/* Các thuộc tính của clear_fix */
+		content: "";
+		display: block;
+		clear: both;
+		}
 
-	/* CSS cho phần border */
-	/* CSS cho phần border */
-	.border {
-	/* Các thuộc tính của border */
-	border: 1px solid #ccc;
-	padding: 10px;
-	margin-bottom: 20px;
-	border-radius: 5px; /* Bo tròn viền */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
-	}
+		/* CSS cho phần border */
+		/* CSS cho phần border */
+		.border {
+		/* Các thuộc tính của border */
+		border: 1px solid #ccc;
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px; /* Bo tròn viền */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+		}
 
-	/* CSS cho phần border:hover */
-	.border:hover {
-	/* Các thuộc tính của border khi hover */
-	border-color: #ff0000; /* Màu viền khi hover */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
-	}
+		/* CSS cho phần border:hover */
+		.border:hover {
+		/* Các thuộc tính của border khi hover */
+		border-color: #ff0000; /* Màu viền khi hover */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+		}
 
-	/* CSS cho phần float_left */
-	.float_left {
-	/* Các thuộc tính của float_left */
-	float: left;
-	}
+		/* CSS cho phần float_left */
+		.float_left {
+		/* Các thuộc tính của float_left */
+		float: left;
+		}
 
-	/* CSS cho phần top10 */
-	.top10 {
-	/* Các thuộc tính của top10 */
-	margin-bottom: 10px;
-	}
+		/* CSS cho phần top10 */
+		.top10 {
+		/* Các thuộc tính của top10 */
+		margin-bottom: 10px;
+		}
 
-	/* CSS cho phần top10 img */
-	.top10 img {
-	/* Các thuộc tính của hình ảnh */
-	width: 20px;
-	height: auto;
-	}
+		/* CSS cho phần top10 img */
+		.top10 img {
+		/* Các thuộc tính của hình ảnh */
+		width: 20px;
+		height: auto;
+		}
 
-	/* CSS cho phần top10 a.text */
-	.top10 a.text {
-	/* Các thuộc tính của đường dẫn văn bản */
-	display: block;
-	font-weight: bold;
-	margin-left: 10px;
-	color: #000;
-	text-decoration: none;
-	}
+		/* CSS cho phần top10 a.text */
+		.top10 a.text {
+		/* Các thuộc tính của đường dẫn văn bản */
+		display: block;
+		font-weight: bold;
+		margin-left: 10px;
+		color: #000;
+		text-decoration: none;
+		}
 
-	/* CSS cho phần top10 a.text:hover */
-	.top10 a.text:hover {
-	/* Các thuộc tính của đường dẫn văn bản khi hover */
-	text-decoration: underline;
-	}
+		/* CSS cho phần top10 a.text:hover */
+		.top10 a.text:hover {
+		/* Các thuộc tính của đường dẫn văn bản khi hover */
+		text-decoration: underline;
+		}
 	</style>
 </head>
 <body>
@@ -201,6 +196,7 @@
 										?>
 										<div class="g-input f1 mb-30">
 											<a href="index.php?act=dangnhap" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng nhập</a>
+											<a href="index.php?act=dangky" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng ký</a>
 											
 										</div>
 									

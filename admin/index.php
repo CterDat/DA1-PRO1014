@@ -5,6 +5,7 @@
     include "../model/taikhoan.php";
     include "../model/binhluan.php";
     include "../model/thongke.php";
+    include "../model/cart.php";
 
     include "header.php";
 
@@ -162,6 +163,19 @@
             case 'bieudo':
                 $listthongke = loadall_thongke();
                 include "thongke/bieudo.php";
+                break;
+            case 'lisdh':
+                
+                $listdh = loadall_order();
+                $listtbl = loadall_tbl_order();
+
+                include "donhang/list.php";
+                break;
+            case 'listbl':
+                
+                $listtbl = loadall_tbl_order();
+
+                include "donhang/listtbl.php";
                 break;
             default:
                 include "home.php";
