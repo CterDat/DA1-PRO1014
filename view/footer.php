@@ -18,17 +18,17 @@
 
 								<div class="recent-posts">
 									<div class="post">
-			                            <div class="post-thumb"><a href="#"><img src="images/shop/N1.png" alt=""></a></div>
+			                            <div class="post-thumb"><a href="#"><img src="images/shop/N1.jpg" alt=""></a></div>
 			                            <h4><a href="#">Control your cholestrol & fat in 2 weeks</a></h4>
 			                            <div class="post-info"><i class="fa fa-clock-o"></i>08th Sep, 2015</div>
 			                        </div>
 									<div class="post">
-			                            <div class="post-thumb"><a href="#"><img src="images/shop/Y1.png" alt=""></a></div>
+			                            <div class="post-thumb"><a href="#"><img src="images/shop/Y1.jpg" alt=""></a></div>
 			                            <h4><a href="#">Control your cholestrol & fat in 2 weeks</a></h4>
 			                            <div class="post-info"><i class="fa fa-clock-o"></i>08th Sep, 2015</div>
 			                        </div>
 			                        <div class="post">
-			                            <div class="post-thumb"><a href="#"><img src="images/shop/C1.png" alt=""></a></div>
+			                            <div class="post-thumb"><a href="#"><img src="images/shop/C1.jpg" alt=""></a></div>
 			                            <h4><a href="#">Control your cholestrol & fat in 2 weeks</a></h4>
 			                            <div class="post-info"><i class="fa fa-clock-o"></i>08th Sep, 2015</div>
 			                        </div>
