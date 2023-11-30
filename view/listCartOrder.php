@@ -3,16 +3,16 @@ if (empty($dataDb)) {
     echo '<h1>Chưa có sản phẩm nào trong giỏ hàng</h1>';
 } else {
 ?>
-    <table border="1" width="100%" style="margin: 0 auto;">
+    <table border="1" width="100%" style="margin: 0 auto;" class="table table-striped">
         <thead>
             <tr align="center">
-                <td>STT</td>
-                <td>Image</td>
-                <td>Name</td>
-                <td>Price</td>
-                <td>Quantity</td>
-                <td>Total Price</td>
-                <td>Action</td>
+                <td scope="col">STT</td>
+                <td scope="col">Image</td>
+                <td scope="col">Name</td>
+                <td scope="col">Price</td>
+                <td scope="col">Quantity</td>
+                <td scope="col">Total Price</td>
+                <td scope="col">Action</td>
             </tr>
         </thead>
         <tbody id="order">
@@ -29,19 +29,19 @@ if (empty($dataDb)) {
                 }
             ?>
                 <tr align="center">
-                    <td><?= $key + 1 ?></td>
-                    <td>
+                    <td scope="col"><?= $key + 1 ?></td>
+                    <td scope="col">
                         <img src="<?= $img_path, $product['img'] ?>" alt="<?= $product['name'] ?>" style="width: 100px; height: auto">
                     </td>
-                    <td><?= $product['name'] ?></td>
-                    <td><?= number_format((int)$product['price'], 0, ",", ".")  ?> <u>đ</u></td>
-                    <td>
+                    <td scope="col"><?= $product['name'] ?></td>
+                    <td scope="col"><?= number_format((int)$product['price'], 0, ",", ".")  ?> <u>đ</u></td>
+                    <td scope="col">
                         <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)">
                     </td>
-                    <td>
+                    <td scope="col">
                         <?= number_format((int)$product['price'] * (int)$quantityInCart, 0, ",", ".") ?> <u>đ</u>
                     </td>
-                    <td>
+                    <td scope="col">
                         <button onclick="removeFormCart(<?= $product['id'] ?>)">Xóa</button>
                     </td>
                 </tr>
