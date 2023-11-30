@@ -20,13 +20,6 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="view/css/dangnhap.css">
-
-		<!-- Fixing Internet Explorer ______________________________________-->
-
-		<!--[if lt IE 9]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="vendor/html5shiv.js"></script>
-		<![endif]-->
 		<style>
 			.top10 img{
 				width: 50px;
@@ -204,14 +197,14 @@
 										</div>
 										<?php
 
-									}else{
-									?>
+										}else{
+										?>
 										<div class="g-input f1 mb-30">
 											<a href="index.php?act=dangnhap" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng nhập</a>
 											
 										</div>
 									
-									<?php } ?>
+										<?php } ?>
 							</div>
 						</div> 
 						<!-- End of .cart_list -->
