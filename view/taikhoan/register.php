@@ -3,7 +3,7 @@
 <body>
     <section>
         <div class="img-bg">
-        <img src="./view/css/images/5.jpg" alt="Hình Ảnh Minh Họa" >
+        <img src="./view/css/images/log.png" alt="Hình Ảnh Minh Họa" style="width = 70%">
         </div>
         <div class="noi-dung">
             <div class="form">

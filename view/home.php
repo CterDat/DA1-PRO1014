@@ -1039,7 +1039,7 @@
 
 
 
-			<section class="call-out">
+			<!-- <section class="call-out">
 			    <div class="container">
 			        <div class="float_left">
 			            <h2>Subscribe For Newsletter</h2>
@@ -1069,7 +1069,7 @@
 		                </div>
 			        </div>
 			    </div>
-			</section>
+			</section> -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     let totalProduct = document.getElementById('totalProduct');
