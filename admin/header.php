@@ -640,24 +640,45 @@
                                             </a>
                                         </li>
                                         <li class="nav-item relative block">
-                                            <a href="pages-profile.html"
+                                            <a href="index.php?act=dskh"
                                                class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
                                                 <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
                                                 Profile
                                             </a>
                                         </li>
                                         <li class="nav-item relative block">
-                                            <a href="pages-starter.html"
+                                            <a href="index.php?act=dsbl"
                                                class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
                                                 <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
-                                                Starter
+                                                Comment
                                             </a>
                                         </li>  
                                         <li class="nav-item relative block">
-                                            <a href="pages-timeline.html"
+                                            <a href="index.php?act=thongke"
                                                class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
                                                 <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
-                                                Timeline
+                                                Charts
+                                            </a>
+                                        </li>
+                                        <li class="nav-item relative block">
+                                            <a href="index.php?act=lisdh"
+                                               class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
+                                                <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
+                                                Order detail
+                                            </a>
+                                        </li>
+                                        <li class="nav-item relative block">
+                                            <a href="index.php?act=listbl"
+                                               class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
+                                                <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
+                                                Đơn Hàng
+                                            </a>
+                                        </li>
+                                        <li class="nav-item relative block">
+                                            <a href="../index.php"
+                                               class="nav-link  hover:text-primary-500  rounded-md dark:hover:text-primary-500 relative group-data-[sidebar=brand]:hover:text-slate-200   flex items-center decoration-0 px-3 py-3">
+                                                <i class="icofont-dotted-right me-2 text-slate-600 text-[8px] group-data-[sidebar=brand]:text-slate-400"></i>
+                                                Trang chính
                                             </a>
                                         </li>                             
                                     </ul>

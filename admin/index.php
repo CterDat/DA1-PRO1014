@@ -4,6 +4,9 @@
     include "../model/sanpham.php";
     include "../model/taikhoan.php";
     include "../model/binhluan.php";
+    include "../model/thongke.php";
+    include "../model/cart.php";
+
     include "header.php";
 
     if (isset($_GET['act'])) {
@@ -124,6 +127,55 @@
                 $listdanhmuc = loadall_danhmuc();
                 $listsanpham = loadall_sanpham("",0);
                 include "sanpham/add.php";
+                break;
+                
+            case 'dskh':
+                $listtaikhoan = loadall_taikhoan();
+
+                include "taikhoan/list.php";
+                break;
+            case 'xoatk':
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    delete_taikhoan($_GET['id']);
+                }
+                
+                $listtaikhoan = loadall_taikhoan("",0);
+                include "taikhoan/list.php";
+                break;
+            case 'dsbl':
+                $listbinhluan = loadall_binhluan(0);
+
+                include "binhluan/list.php";
+                break;
+            case 'xoabl':
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    delete_binhluan($_GET['id']);
+                }
+                
+                $listbinhluan = loadall_binhluan(0);
+                include "binhluan/list.php";
+                break;
+            case 'thongke':
+                $listthongke = loadall_thongke();
+
+                include "thongke/list.php";
+                break;
+            case 'bieudo':
+                $listthongke = loadall_thongke();
+                include "thongke/bieudo.php";
+                break;
+            case 'lisdh':
+                
+                $listdh = loadall_order();
+                $listtbl = loadall_tbl_order();
+
+                include "donhang/list.php";
+                break;
+            case 'listbl':
+                
+                $listtbl = loadall_tbl_order();
+
+                include "donhang/listtbl.php";
                 break;
             default:
                 include "home.php";

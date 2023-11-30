@@ -34,6 +34,12 @@ function load_ten_dm($iddm){
     
 }
 
+function loadone_sanphamCart ($idList) {
+    $sql = 'SELECT * FROM sanpham WHERE id IN ('. $idList . ')';
+    $sanpham = pdo_query($sql);
+    return $sanpham;
+}
+
 function loadall_sanpham_home(){
     $sql ="select * from sanpham where 1 order by id desc limit 0,9";
     $listsanpham = pdo_query($sql);
@@ -41,7 +47,7 @@ function loadall_sanpham_home(){
 }
 
 function loadall_sanpham_top10(){
-    $sql ="select * from sanpham where 1 order by luotxem desc limit 0,10";
+    $sql ="select * from sanpham where 1 order by luotxem desc limit 0,3";
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
