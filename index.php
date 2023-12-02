@@ -61,7 +61,9 @@
             }
             include "view/listCartOrder.php";
             break;
-
+            // case "camon":
+            //     include "view/camon.php";
+            //     break;
             case "order":
             if (isset($_SESSION['cart'])) {
                 $cart = $_SESSION['cart'];
@@ -176,64 +178,7 @@
                 }
                 include "view/taikhoan/quenmk.php";
                 break;
-            case 'addtocart':
-                if (isset($_POST['addtocart'])&&($_POST['addtocart'])){
-                    $id=$_POST['id']; 
-                    $name=$_POST['name'];
-                    $img=$_POST['img'];
-                    $price=$_POST['price'];
-                    $soluong=1;
-                    $ttien=$soluong * $price;
-                    $spadd=[$id,$name,$img,$price,$soluong,$ttien];
-                    array_push($_SESSION['mycart'],$spadd);
-                    
-                }
             
-                include "view/cart/viewcart.php";
-                break;
-            case 'delcart':
-                if (isset($_GET['idcart'])) {
-                    array_splice($_SESSION['mycart'],$_GET['idcart'],1);
-                }else{
-                    $_SESSION['mycart']=[];
-                }
-                header('Location: index.php?act=viewcart');
-                break;
-            case 'viewcart':
-                
-                include "view/cart/viewcart.php";
-                break;
-            case 'bill':
-                
-                include "view/cart/bill.php";
-                break;
-            case 'billcomfirm':
-                if (isset($_POST['dongy'])&&($_POST['dongy'])){
-                    $name=$_POST['name'];
-                    $email=$_POST['email'];
-                    $address=$_POST['address'];
-                    $tel=$_POST['tel'];
-                    $pttt=$_POST['pttt'];
-                    $ngaydathang=('h:i:sa d/m/Y');
-                    $tongdonhang=tongdonhang();
-
-                    $idbill= insert_bill($name,$email,$address,$tel,$pttt ,$ngaydathang,$tongdonhang);
-                    //insert into cái bảng cart: session mycart $ idbill
-
-                    foreach($_SESSION['mycart'] as $cart){
-                        insert_cart($_SESSION['user']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
-                    }
-
-                    // $_SESSION['cart']=[];
-                }
-                $bill= loadone_bill($idbill);
-                $billct= loadall_cart($idbill);
-                include "view/cart/billcomfirm.php";
-                break;
-            case 'mybill':
-                
-                include "view/cart/mybill.php";
-                break;
             case 'gioithieu':
                 
                 include "view/gioithieu.php";

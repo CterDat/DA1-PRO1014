@@ -1,3 +1,8 @@
+<?php
+    if (is_array($tbl)) {
+        extract($tbl);
+    }
+?>
 <div class="ltr:flex flex-1 rtl:flex-row-reverse">
             <div class="page-wrapper relative ltr:ms-auto rtl:me-auto rtl:ms-0 w-[calc(100%-260px)] px-4 pt-[64px] duration-300">
                 <div class="xl:w-full">        
