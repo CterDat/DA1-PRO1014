@@ -37,7 +37,7 @@
 
                                     <div class="mb-2">
                                     <label for="trangthai" class="font-medium text-sm text-slate-600 dark:text-slate-400">(1.Đang chờ | 2. Đã xác nhận | 3. Đang vận chuyển | 4. Hoàn thành)</label>
-                                    <input type="text" name="trangthai" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="<?php if(isset($name)&&($name!="")) echo $name;?>">
+                                    <input type="text" name="trangthai" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="<?php if(isset($trangthai)&&($trangthai!="")) echo $trangthai;?>">
                                     </div>
                                     <div class="">
                                         <input type="hidden" name="id_order" value="<?php if(isset($id_order)&&($id_order>0)) echo $id_order;?>">

@@ -199,9 +199,7 @@
                 break;
             case 'suatbl':
                 if(isset($_GET['id_order'])&&($_GET['id_order']>0)) {
-                    
-                    
-                    $tbl = loadone_tbl($_GET['id_order']);
+                    $tbl =loadone_tbl($_GET['id_order']);
                 }
                 include "donhang/updatetbl.php";
                 break;
