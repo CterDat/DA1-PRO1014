@@ -5,7 +5,7 @@
     include "model/sanpham.php";
     include "model/taikhoan.php";
     include "model/order.php";
-    
+    include "model/cart.php";
     include "global.php";
 
     ob_start();
@@ -34,7 +34,16 @@
                     include "view/home.php";
                 }
                 break;
+            case 'dh':  
+                $listtbl = loadall_tbl_order();
 
+                include "view/cart/mybill.php";
+                break;
+            case 'chitiet':  
+                
+
+                include "view/cart/ctsp.php";
+                break;
             case "listCart":
             // Kiểm tra xem giỏ hàng có dữ liệu hay không
             if (!empty($_SESSION['cart'])) {
@@ -153,6 +162,7 @@
                 }
                 include "view/taikhoan/edit_taikhoan.php";
                 break;
+            
             case 'quenmk':
                 if (isset($_POST['guiemail'])&&($_POST['guiemail'])) {
                     $email=$_POST['email'];
@@ -178,7 +188,7 @@
                     array_push($_SESSION['mycart'],$spadd);
                     
                 }
-
+            
                 include "view/cart/viewcart.php";
                 break;
             case 'delcart':

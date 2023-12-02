@@ -26,4 +26,17 @@ function loadall_tbl_order(){
     $listtbl = pdo_query($sql);
     return $listtbl;
 }
+function delete_tbl($id){
+    $sql = "delete from tbl_order where id_order = ".$id;
+    pdo_query($sql);
+}
+function loadone_tbl($id_order){
+    $sql = "select * from tbl_order where id_order=".$id_order;
+    $tbl = pdo_query_one($sql);
+    return $tbl;            
+}
+function update_tbl($id_order,$trangthai){
+    $sql = "update tbl_order set trangthai='".$trangthai."'where id_order=".$id_order;
+    pdo_execute($sql);
+}
 ?>

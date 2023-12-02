@@ -12,6 +12,18 @@
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
+            case "listsp":
+                if(isset($_POST['clickOK'])&&($_POST['clickOK'])){
+                    $keyw=$_POST['keyw'];
+                    $iddm=$_POST['iddm'];
+                }else{
+                    $keyw="";
+                    $iddm=0;
+                }
+                $listdanhmuc=loadall_danhmuc();
+                $listsanpham=loadall_sanpham($keyw,$iddm);
+                include "sanpham/list.php";
+            break;
             case 'adddm':
                 //Kiểm tra xem người dùng có click vào nút add hay không ?
                 if(isset($_POST['themmoi']) && ($_POST['themmoi'])){
@@ -175,6 +187,33 @@
                 
                 $listtbl = loadall_tbl_order();
 
+                include "donhang/listtbl.php";
+                break;
+            case 'xoatbl':
+                if(isset($_GET['id_order'])&&($_GET['id_order']>0)){
+                    delete_tbl($_GET['id_order']);
+                }
+                
+                $listtbl = loadall_tbl_order();
+                include "donhang/listtbl.php";
+                break;
+            case 'suatbl':
+                if(isset($_GET['id_order'])&&($_GET['id_order']>0)) {
+                    
+                    
+                    $tbl = loadone_tbl($_GET['id_order']);
+                }
+                include "donhang/updatetbl.php";
+                break;
+            case 'updatetbl':
+                if(isset($_POST['capnhat']) && ($_POST['capnhat'])){   
+                    $id_order = $_POST['id_order'];
+                    $trangthai = $_POST['trangthai'];
+                    update_tbl($id_order,$trangthai);
+                    
+                }
+            
+                $listtbl = loadall_tbl_order();
                 include "donhang/listtbl.php";
                 break;
             default:

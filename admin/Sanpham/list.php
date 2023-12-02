@@ -29,7 +29,20 @@
                 </div><!--end container-->
             
                 <div class="xl:w-full  min-h-[calc(100vh-138px)] relative pb-14">
-                    <form action="index.php?act=addsp" method="post" >
+                <form action="index.php?act=listsp" method="POST">
+                <input type="text" name="keyw" placeholder="Search">
+                <select name="iddm" id="">
+                    <option value="0" selected>Tất cả</option>
+                    <?php
+                    foreach($listdanhmuc as $danhmuc){
+                        extract($danhmuc);
+                        echo '<option value="'.$id.'">'.$name.'</option>' ;
+                    }
+                    ?>
+           </select>
+           <input type="submit" name="clickOK" value="GO">
+            </form>
+                    <!-- <form action="index.php?act=addsp" method="post" > -->
                     <!-- <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 justify-between">  -->
                         <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                             <div class="w-full relative mb-4">  
@@ -82,7 +95,7 @@
                         }
                         
                         ?>
-                        </form>  
+                        <!-- </form>   -->
                         </div>
                         
                                       

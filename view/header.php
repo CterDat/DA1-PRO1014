@@ -121,14 +121,14 @@
 			<div class="pull-left header_left">
 				<ul>
 					<li><a href="#">Liên hệ số điện thoại : <span>+84 357 717 435</span></a></li>
-					<li><i class="fa fa-envelope-o s_color" aria-hidden="true"></i><a href="#">datnvph34326@gmail.com</a></li>
+					<li><i class="fa fa-envelope-o s_color" aria-hidden="true"></i><a href="#">DTCShops@gmail.com</a></li>
 				</ul>
 			</div>
 
 			<div class="pull-right header_right">
 				<div class="state" id="value1">
 					<ul>
-						<li><i class="fa fa-user s_color" aria-hidden="true"></i><a href="#">Tài khoản</a></li>
+						<li><i class="fa fa-user s_color" aria-hidden="true"></i><a href="index.php?act=dstk">Tài khoản</a></li>
 						<li><i class="fa fa-heart s_color" aria-hidden="true"></i><a href="#">Danh sách yêu thích </a></li>
 						<li><i class="fa fa-truck s_color" aria-hidden="true"></i><a href="#">Danh sách giao hàng</a></li>
 					</ul>
@@ -168,10 +168,13 @@
 				</div>
 				<div class="col-md-4 col-sm-7 col-xs-6 pdt-14">
 					<div class="login_option float_left">
-						<div class="login_form">
+						<div class=" login_form">
+							
 							<div class="user">
-								<i class="icon-photo"></i>
+							<a href="index.php?act=dstk" class="dropbtn"><i class="icon-photo" style="width:100px;"></i></a>
+					
 							</div>
+							
 							<div class="login-info">
 								<?php
 									if (isset($_SESSION['user'])) {
@@ -185,6 +188,8 @@
 									
 										<div class="g-input f1 mb-30">
 										<?php if ($role==1) { ?>
+										<a href="index.php?act=dh" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đơn hàng</a>	
+										<a href="index.php?act=edit_taikhoan" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đổi mật khẩu</a>
 										<a href="admin/index.php" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Quản trị</a>
 										<?php } ?>
 											

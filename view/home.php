@@ -5,7 +5,7 @@
 					<ul class="menuzord-menu">
 					  <li><a href="index.php">Trang chủ</a></li>
 					  <li><a href="shop.html">Giới thiệu</a></li>
-					  <li><a href="gallery-grid.html">Phòng trưng bày</a></li>
+					  <li><a href="gallery-grid.html">Danh sách</a></li>
 					  <li><a href="contact.html">Liên hệ</a></li>
 					</ul> <!-- End of .menuzord-menu -->
 				  </nav> <!-- End of #main_menu -->
@@ -313,7 +313,7 @@
 															</li>
 						                        			<li><a href=""><span class="fa fa-heart-o"></span></a></li>
 						                        		</ul>
-														</form>
+														<!-- </form> -->
 						                        	</div>
 						                        	<div class="bottom-content">
 						                        		<h4><a href="#">It Contains:</a></h4>

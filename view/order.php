@@ -10,7 +10,7 @@
     .sub-order td:last-child,.sub-order th:last-child{text-align: right;}
 </style>
 <div class="page-order">
-    <div class="form-order">
+    <div class="form-order" style="margin: 0 auto;">
         <form action="" method="post">
             <h2>Thông tin khách hàng</h2>
             <div><input type="text" name="txthoten" id="" placeholder="Họ và tên" required></div>
@@ -25,10 +25,10 @@
     </div>
     <div class="sub-order">
         <h2>Đơn hàng</h2>
-        <table >
+        <table class="table table-striped">
             <tr>
-                <th>Sản phẩm</th>
-                <th>Thành tiền</th>
+                <th scope="col">Sản phẩm</th>
+                <th scope="col">Thành tiền</th>
             </tr>
             <?php 
                 // print_r($cart);

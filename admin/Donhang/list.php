@@ -47,7 +47,7 @@
                                     <?php
                                         foreach ($listdh as $donhang) {
                                             extract($donhang);
-                                            $suadm="index.php?act=suadh&id=".$id_order_detail;
+                                            
                                             $xoadm="index.php?act=xoadh&id=".$id_order_detail;
                                             echo '<tr>
                                             <td>'.$id_order_detail.'</td>
@@ -56,7 +56,7 @@
                                             <td>'.$giamua.'</td>
                                             <td>'.$soluong.'</td>
                                             <td>'.$thanhtien.' <u>đ</u></td>
-                                            <td><a href="'.$suadm.'"><input type="button" value="Sửa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a> <a href="'.$xoadm.'"> <input type="button" value="Xóa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
+                                            <td> <a href="'.$xoadm.'"> <input type="button" value="Xóa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
                                         </tr>';
                                         }
                                     ?>
