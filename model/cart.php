@@ -26,6 +26,11 @@ function loadall_tbl_order(){
     $listtbl = pdo_query($sql);
     return $listtbl;
 }
+
+function delete_order_detail($id){
+    $sql = "delete from order_detail where id_order_detail = ".$id;
+    pdo_query($sql);
+}
 function delete_tbl($id){
     $sql = "delete from tbl_order where id_order = ".$id;
     pdo_query($sql);

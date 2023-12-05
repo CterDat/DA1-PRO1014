@@ -131,7 +131,8 @@
                 }
                 include "view/taikhoan/register.php";
                 break;
-        
+    
+
             case 'dangnhap':
                 
                 if (isset($_POST['dangnhap'])&&($_POST['dangnhap'])) {

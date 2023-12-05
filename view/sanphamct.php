@@ -158,8 +158,9 @@
 										<span class="item_price"><?= $price ?> VNĐ</span>
 										<p><?= $mota ?></p>
 
-										<input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)" >
-										<a href="#" class="tran3s color1_bg">Thêm vào giỏ hàng</a>
+										<!-- <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)" > -->
+										<!-- <a href="#" class="tran3s color1_bg">Thêm vào giỏ hàng</a> -->
+										<button data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="btn btn-danger" style="padding: 10px; margin-left: 20px;">Thêm vào giỏ hàng</button>
 	        						</div> <!-- End of .item_description -->
 	        					</div> <!-- End of .product_top_section -->
 
@@ -260,31 +261,28 @@
 	        	</div> <!-- End of .container -->
 	        </div> <!-- End of .shop_single_page -->
 
+			<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-	function updateQuantity(id, index) {
-        // lấy giá trị của ô input
-        let newQuantity = $('#quantity_' + id).val();
-        if (newQuantity <= 0) {
-            newQuantity = 1
-        }
-
-        // Gửi yêu cầu bằng ajax để cập nhật giỏ hàng
+    let totalProduct = document.getElementById('totalProduct');
+    function addToCart(productId, productName, productPrice) {
+        // console.log(productId, productName, productPrice);
+        // Sử dụng jQuery
         $.ajax({
             type: 'POST',
-            url: './view/updateQuantity.php',
+            // Đường dẫ tới tệp PHP xử lý dữ liệu
+            url: './view/addToCart.php',
             data: {
-                id: id,
-                quantity: newQuantity
+                id: productId,
+                name: productName,
+                price: productPrice
             },
             success: function(response) {
-                // Sau khi cập nhật thành công
-                $.post('view/tableCartOrder.php', function(data) {
-                    $('#order').html(data);
-                })
+                totalProduct.innerText = response;
+                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
             },
             error: function(error) {
                 console.log(error);
-            },
-        })
+            }
+        });
     }
 </script>

@@ -453,7 +453,7 @@
 
 			<!-- Request Quote ******************************* -->
 			<section class="why_choose_us">
-				<div class="theme_title_bg" style="background-image: url(images/background/1.jpg);">
+				<!-- <div class="theme_title_bg" style="background-image: url(images/background/1.jpg);">
 					<div class="theme_title center">
 						<div class="container">
 							<h2>Why to Choose Us</h2>
@@ -462,7 +462,7 @@
 						</div>
 					</div>
 					
-				</div>
+				</div> -->
 				
 				<div class="container">
 					 <!-- End of .theme_title_center -->
@@ -480,7 +480,7 @@
 								<div class="clear_fix"></div>
 							</div> <!-- End of .choose_us_item -->
 						</div> <!-- End of .col -->
-
+											
 						<!-- ______________ Item _____________ -->
 						<div class="col-md-6 col-sm-12 col-xs-12">
 							<div class="choose_us_item tran3s">

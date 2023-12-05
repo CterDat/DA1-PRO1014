@@ -183,6 +183,14 @@
 
                 include "donhang/list.php";
                 break;
+            case 'xoaor':
+                if(isset($_GET['id_order_detail'])&&($_GET['id_order_detail']>0)){
+                    delete_order_detail($_GET['id_order_detail']);
+                }
+                
+                $listdh = loadall_order();
+                include "donhang/list.php";
+                break;
             case 'listbl':
                 
                 $listtbl = loadall_tbl_order();

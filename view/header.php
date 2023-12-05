@@ -171,7 +171,7 @@
 						<div class=" login_form">
 							
 							<div class="user">
-							<a href="index.php?act=dstk" class="dropbtn"><i class="icon-photo" style="width:100px;"></i></a>
+							<i class="icon-photo" style="width:100px;"></i>
 					
 							</div>
 							
@@ -187,9 +187,10 @@
 								<!-- select menu -->
 									
 										<div class="g-input f1 mb-30">
-										<?php if ($role==1) { ?>
+										
 										<a href="index.php?act=dh" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đơn hàng</a>	
 										<a href="index.php?act=edit_taikhoan" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đổi mật khẩu</a>
+										<?php if ($role==1) { ?>
 										<a href="admin/index.php" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Quản trị</a>
 										<?php } ?>
 											
