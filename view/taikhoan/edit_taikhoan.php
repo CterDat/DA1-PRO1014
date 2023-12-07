@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -22,7 +22,9 @@
         } */
 
         /* Form styles */
-        form {
+
+        
+        /* form {
             display: flex;
             flex-direction: column;
         }
@@ -32,7 +34,7 @@
         }
 
         /* Input styles */
-        input {
+        /* input {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
@@ -43,7 +45,7 @@
         }
 
         /* Button styles */
-        input[type="submit"],
+        /* input[type="submit"],
         input[type="reset"] {
             background-color: red;
             color: #fff;
@@ -51,18 +53,19 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-        }
+        } */
 
-        input[type="submit"]:hover,
+        /* input[type="submit"]:hover,
         input[type="reset"]:hover {
             background-color: #45a049;
-        }
+        } */
 
         /* Message styles */
-        .message {
+        /* .message {
             margin-top: 15px;
             color: #ff0000;
-        }
+        }  */ 
+        
     </style>
 </head>
 <body>
@@ -72,9 +75,15 @@
      <!-- END HEADER -->
           
     <div>
-                
-                <div class="">Cập nhật tài khoản</div>
-                <div class="">
+    <section class="d-flex">
+        <div class="img-bg">
+            
+            <img src="view/css/images/log.png" alt="Hình Ảnh Minh Họa" style="width: 70%,  margin-left= 20px">
+        </div>
+        <div class="noi-dung">
+            <div class="form">
+            <h2>Đổi mật khẩu</h2>
+                <div class="container">
                     <?php
                     if(isset($_SESSION['user']) && (is_array($_SESSION['user']))){
                         extract($_SESSION['user']);
@@ -82,28 +91,34 @@
                     ?>
                     <form action="index.php?act=edit_taikhoan" method="post">
                     <div>
-                    <p>Email</p>
-                    <input type="email" name="email" value="<?=$email?>" placeholder="email">
+                    <div class="input-form">
+                        <span>Email</span>
+                        <input type="email" name="email" value="<?=$email?>" placeholder="email">
                     </div>
-                    <div>
-                    Tên đăng nhập
-                    <input type="text" name="user" value="<?=$user?>"  placeholder="user">
+                    <div class="input-form">
+                        <span>  Tên đăng nhập</span>
+                        <input type="text" name="user" value="<?=$user?>"  placeholder="user">
                     </div>
-                    Mật khẩu
-                    <div>
-                    <input type="password" name="pass" value="<?=$pass?>"  placeholder="pass">
+                    <div class="input-form">
+                        <span>  Mật khẩu</span>
+                        <input type="password" name="pass" value="<?=$pass?>"  placeholder="pass">
                     </div>
-                    Địa chỉ
-                    <div>
-                    <input type="text" name="address"value="<?=$address?>"  placeholder="address">
+                    <div class="input-form">
+                        <span>   Địa chỉ</span>
+                        <input type="text" name="address"value="<?=$address?>"  placeholder="address">
                     </div>
-                    Điện thoại
-                    <div>
-                    <input type="text" name="tel"value="<?=$tel?>"  placeholder="tel">
+                    <div class="input-form">
+                        <span> Điện thoại</span>
+                        <input type="text" name="tel"value="<?=$tel?>"  placeholder="tel">
                     </div>
+
                     <input type="hidden" name="id" value="<?=$id?>">
-                    <input type="submit" value="Cập nhật" name="capnhat">
-                    <input type="reset" value="Nhập lại">
+                    <div class="input-form">
+                    <input type="submit" value="Cập nhật" name="capnhat">>
+                    </div>
+                    <div class="input-form">
+                        <p>Bạn nhập sai?   <input type="reset" value="Nhập lại"></p>
+                    </div>
                   </form>
                   <?php
                   if(isset($thongbao)&&($thongbao!="")){
@@ -112,3 +127,6 @@
                   ?>
                   </div>
                 </div>
+                </div>
+        </div>
+    </section>

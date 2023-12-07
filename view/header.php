@@ -168,64 +168,105 @@
 				</div>
 				<div class="col-md-4 col-sm-7 col-xs-6 pdt-14">
 					<div class="login_option float_left">
-						<div class=" login_form">
+						<div class="login_form">
+						<div class="login_form">
+						<div class="login_form">
+  <div class="user">
+    <i class="icon-photo" id="photo-icon"></i>
+  </div>
+
+  <div class="login-info">
+    <?php
+    if (isset($_SESSION['user'])) {
+      extract($_SESSION['user']);
+      ?>
+      <div class="welcome">Chào mừng! <?=$user?></div>
+	  <div class="g-input f1 mb-30">
+  <select class="text-capitalize selectpicker" data-style="g-select" data-width="100%" id="login-select">
+    <option value="0" selected>Đăng nhập thành công</option>   
+    <option value="dh">Đơn hàng</option>
+    <option value="edit_taikhoan">Đổi mật khẩu</option>
+    <?php if ($role == 1): ?>
+      <option value="admin">Quản trị</option>
+    <?php endif; ?>
+    <option value="thoat">Đăng xuất</option>
+  </select>
+</div>
+
+<script>
+  var selectElement = document.getElementById("login-select");
+  selectElement.addEventListener("change", function() {
+    var selectedValue = selectElement.value;
+    var loggedIn = <?php echo isset($_SESSION['user']) ? 'true' : 'false'; ?>;
+    var role = <?php echo $role; ?>;
+    
+    console.log("Selected value:", selectedValue);
+    console.log("Logged in:", loggedIn);
+    console.log("Role:", role);
+
+    if (!loggedIn) {
+      window.location.href = "index.php?act=dangnhap";
+    } else {
+      if (selectedValue === "dh") {
+        window.location.href = "index.php?act=dh";
+      } else if (selectedValue === "edit_taikhoan") {
+        window.location.href = "index.php?act=edit_taikhoan";
+	  }else if (selectedValue === "thoat") {
+        // Log out the user
+        window.location.href = "index.php?act=thoat";
+      } else if (selectedValue === "admin" && role !== 1) {
+        // Xử lý truy cập không được phép vào trang quản trị
+      } else {
+        window.location.href = "http://localhost/du_an_1/admin/#";
+      }
+    }	
+  });
+</script>
+      <?php
+    } else {
+      ?>
+  <div class="g-input f1 mb-30">
+  <select class="text-capitalize selectpicker" data-style="g-select" data-width="100%" id="login-select">
+    <option value="0" selected>Bạn chưa có tài khoản</option>
+    <option value="1">Đăng nhập</option>
+    <option value="2">Đăng ký ở đây</option>
+  </select>
+</div>
+
+<script>
+  var selectElement = document.getElementById("login-select");
+  selectElement.addEventListener("change", function() {
+    var selectedValue = selectElement.value;
+    if (selectedValue === "1") {
+      window.location.href = "index.php?act=dangnhap";
+    } else if (selectedValue === "2") {
+      window.location.href = "index.php?act=dangky";
+    }
+  });
+</script>
+      <?php
+    }
+    ?>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="cart_option float_left" style="margin: 0px;">
+	<a href="index.php?act=listCart"><button class="cart tran3s dropdown-toggle" id="cartDropdown"><i class="fa icon-icon-32846" aria-hidden="true"></i><span class="s_color_bg p_color" id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span></button></a>
+	<div class="cart-info">
+		<div>Giỏ hàng của tôi</div>
+		
+	</div>
 							
-							<div class="user">
-							<i class="icon-photo" style="width:100px;"></i>
-					
-							</div>
-							
-							<div class="login-info">
-								<?php
-									if (isset($_SESSION['user'])) {
-										extract($_SESSION['user']);
-								?>
-										<div class="welcome">Chào mừng!
-											<?=$user?>
-										</div>
-								
-								<!-- select menu -->
-									
-										<div class="g-input f1 mb-30">
-										
-										<a href="index.php?act=dh" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đơn hàng</a>	
-										<a href="index.php?act=edit_taikhoan" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đổi mật khẩu</a>
-										<?php if ($role==1) { ?>
-										<a href="admin/index.php" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Quản trị</a>
-										<?php } ?>
-											
-											<a href="index.php?act=thoat" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Thoát</a>
-										</div>
-										<?php
+			
+	</div>
 
-										}else{
-										?>
-										<div class="g-input f1 mb-30">
-											<a href="index.php?act=dangnhap" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng nhập</a>
-											<a href="index.php?act=dangky" class="text-capitalize selectpicker" data-style="g-select" data-width="100%">Đăng ký</a>
-											
-										</div>
-									
-										<?php } ?>
-							</div>
-						</div> 
-						<!-- End of .cart_list -->
-					</div>
-					<div class="cart_option float_left" style="margin: 0px;">
-						<a href="index.php?act=listCart"><button class="cart tran3s dropdown-toggle" id="cartDropdown"><i class="fa icon-icon-32846" aria-hidden="true"></i><span class="s_color_bg p_color" id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span></button></a>
-						<div class="cart-info">
-							<div>Giỏ hàng của tôi</div>
-							<div class="doller">84.00$</div>
-						</div>
-							
-						
-					</div>
+	</div>
 
-				</div>
+</div>
 
-			</div>
-
-		</div>
+</div>
 	</div> 
-	<!-- End of .bottom_header -->
+<!-- End of .bottom_header -->
 </header>

@@ -1,5 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .table {
+       width: 70%;
+       border-collapse: collapse;
+       margin-left: 200px;
+       margin-bottom: 100px;
+}
+
+.tr, th{
+    background-color: #FF6600;
+    color: white;
+}
+    </style>
+</head>
+<body>
 <div class="flex-auto p-0 md:p-4">                                 
                                     <table class="table table-striped">
+                                        <h1 style=" text-align: center;margin-bottom: 70px;margin-top: 40px; color:#FF6600">Danh Sách Đơn Hàng</h1>
                                     <tr>
                                         <th scope="col">ID ORDER</th>
                                         <th scope="col">HỌ TÊN</th>
@@ -34,3 +56,5 @@
                                 </div><!--end card-body--> 
                                 
                             </div><!--end card-->   
+</body>
+</html>

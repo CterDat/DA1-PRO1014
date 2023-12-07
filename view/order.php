@@ -4,13 +4,9 @@
   margin-top: 30px;
   color: red;
   font-size: 30px;
+  margin-bottom: 30px;
 }
-/* img{
-    width: 50px;
-    position: absolute;
-    left: 670px;
-    top: 270px;
-} */
+
     h2{
         margin-bottom: 20px;
         font-size: 24px;
@@ -26,6 +22,7 @@
         padding: 10px 20px;
         margin-top: 15px;
         border-radius: 10px;
+        margin-bottom: 20px;
     }
     .page-order{
         display: flex;}
@@ -37,8 +34,8 @@
     .form-order h2{
         color: red;
         margin-bottom: 20px;
-        font-size: 24px;
-        padding-right: 600px;
+        font-size: 20px;
+        padding-right: 530px;
     }
     .sub-order{
         width: 30%;
@@ -46,6 +43,7 @@
     }
     .sub-order h2{
         color: red;
+        font-size: 20px;
     }
     .sub-order td,.sub-order th
     {padding: 5px;
@@ -56,7 +54,10 @@
     .sub-order td:last-child,.sub-order th:last-child{
         text-align: right;
     }
-    
+    .btn{
+        background-color: #FF6600;
+        color: white;
+    }
 </style>
 <!-- <img src="images/payment-logo.png" alt="Logo thanh toán"> -->
 <h1>Thanh toán</h1>
@@ -77,7 +78,7 @@
             <p><a href="view/thanhtoanmomo_atm.php"> Liên kết qua momo</a></p>
             <?php if(isset($_SESSION['user'])) {
                 extract($_SESSION['user'])?>
-            <input type="submit" value="Xác nhận đặt hàng" name="order_confirm" class="btn btn-danger">
+            <input type="submit" value="Xác nhận đặt hàng" name="order_confirm" class="btn">
             <?php }else{  ?>
             <input type="submit" value="Xác nhận đặt hàng" name="lg" class="btn btn-danger">
             <?php } ?>    
