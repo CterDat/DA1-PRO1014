@@ -8,28 +8,35 @@ table {
   width: 100%;
   margin: 0 auto;
   font-size: 18px;
+  border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+  border: none; /* Loại bỏ border bên ngoài */
 }
 
 td, th {
   padding: 12px;
+  border: none; /* Loại bỏ border */
+  
+}
+ b {
+    color: #f2f2f2;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Tạo hiệu ứng sọc cho các dòng chẵn */
 }
 
 input[type="number"] {
   width: 60px;
   height: 40px;
   font-size: 16px;
+  border: none; /* Loại bỏ border của ô input */
 }
 
-button[name="order"] {
-  padding: 12px 24px;
-  font-size: 18px;
-}
 .button-delete {
   padding: 8px 16px;
   font-size: 14px;
   background-color: #f44336;
   color: #fff;
-  border: 2px solid #d32f2f;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -48,11 +55,25 @@ button[name="order"] {
   background-color: #b71c1c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-.button-order {
 
- margin-left: 165px;
+.button-container:hover .button-delete {
+  background-color: #d32f2f;
+}
+
+.button-container:focus-within .button-delete {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.5);
+}
+
+.button-container:active .button-delete {
+  background-color: #b71c1c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button-order {
+  margin-left: 165px;
   padding: 10px;
-  background-color: #f44336;
+  background-color: #FF6600;
   color: white;
   border: none;
   cursor: pointer;
@@ -60,7 +81,7 @@ button[name="order"] {
 }
 
 .button-order:hover {
-  background-color: #d32f2f;
+  background-color: red;
 }
 
 .button-order:focus {
@@ -72,13 +93,13 @@ button[name="order"] {
   background-color: #b71c1c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 .cart-title {
   font-size: 30px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   text-align: center;
 }
-
 
 .container {
   position: relative;
@@ -86,6 +107,7 @@ button[name="order"] {
 
 .back-link {
   position: relative;
+
 }
 
 .back-link a {
@@ -96,6 +118,10 @@ button[name="order"] {
   text-decoration: none;
   border-radius: 3px;
   cursor: pointer;
+
+
+  
+
 }
 
 .back-link a:hover {
@@ -119,10 +145,10 @@ button[name="order"] {
 }
 </style>
 <div class="container">
-<h1 class="cart-title">Giỏ hàng</h1>
+<h1 class="cart-title" style="color: #FF6600">Giỏ hàng</h1>
     <table border="1" width="100%" style="margin: 0 auto;">
         <thead>
-            <tr align="center">
+            <tr align="center" style="background-color: #FF6600;">
                 <td><b>STT</b></td>
                 <td><b>Image</b></td>
                 <td><b>Tên</b></td>

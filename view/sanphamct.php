@@ -158,8 +158,9 @@
 										<span class="item_price"><?= $price ?> VNĐ</span>
 										<p><?= $mota ?></p>
 
-										<input type="number" value="1" min="1">
-										<a href="#" class="tran3s color1_bg">Thêm vào giỏ hàng</a>
+										<!-- <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)" > -->
+										<!-- <a href="#" class="tran3s color1_bg">Thêm vào giỏ hàng</a> -->
+										<button data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)" class="btn btn-danger" style="padding: 10px; margin-left: 20px;">Thêm vào giỏ hàng</button>
 	        						</div> <!-- End of .item_description -->
 	        					</div> <!-- End of .product_top_section -->
 
@@ -194,41 +195,42 @@
 						        		<div class="row">
 							            
 								            <?php
-											foreach($spcungloai as $spcungloai){
+											$i = 0;
+											foreach($spcungloai as $spcungloai) :
 												extract($spcungloai);
-												$hinh=$img_path.$img;
-                                                $linksp="index.php?act=sanphamct&idsp=".$id;
-												echo '<div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
+											$linksp="index.php?act=sanphamct&idsp=".$id;
+											$hinh=$img_path.$img;
+											?>
+											<div class="col-md-4 col-sm-6 col-xs-12 default-item" style="display: inline-block;">
 												<div class="inner-box">
 													<div class="single-item center">
 														
-														<figure class="image-box"><img src="'.$hinh.'" alt=""><div class="product-model new">New</div></figure>
+														<figure class="image-box"><img src="<?php echo $hinh ?>" alt=""><div class="product-model new">New</div></figure>
 														<div class="content">
-															<h3><a href="#">'.$name.'</a></h3>
+															<h3><a href="#"><?php echo $name ?>'</a></h3>
 															<div class="rating"><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div>
-															<div class="price">$12.99 <span class="prev-rate">'.$price.'</span></div>
+															<div class="price"><?php echo number_format($price) ?><u>đ</u><span class="prev-rate">13.000 <u>đ</u></span></div>
 														</div>
+														
 														<div class="overlay-box">
 															<div class="inner">
 																
 																<div class="top-content">
-																	<form action="index.php?act=addtocart" method="post" class="fa">
+																	<!-- <form action="index.php?act=addtocart" method="post" class="fa"> -->
 																	<ul>
-																		<li><a href="index.php?act=sanphamct"><span class="fa fa-eye"></span></a></li>
+																		<li><a href="<?php echo $linksp ?>"><span class="fa fa-eye"></span></a></li>
 																		
-																		<li class="tultip-op"><span class="tultip">
-																			<input type="hidden" name="id" value="'.$id.'">
-																			<input type="hidden" name="name" value="'.$name.'">
-																			<input type="hidden" name="img" value="'.$img.'">
-																			<input type="hidden" name="price" value="'.$price.'">
-																			<i class="fa fa-sort-desc"></i><input type="submit" name="addtocart" value="Add to cart">
+																		<li class="tultip-op">
+																			<!-- <span class="tultip"> -->
+																		
+																			<!-- <i class="fa fa-sort-desc"></i><button type="submit" name="addtocart" value="Add to cart" style="width: 110px; color: green;" > -->
+																			<button data-id="<?= $id ?>"  style="width: 42px;" onclick="addToCart(<?= $id ?>, '<?= $name ?>', <?= $price ?>)"><span class="icon-icon-32846"></span></button>
 																			
-																		</span><button type="submit" name="addtocart" style="width: 40px;"><span class="icon-icon-32846"></span></button>
 																		
 																		</li>
 																		<li><a href=""><span class="fa fa-heart-o"></span></a></li>
 																	</ul>
-																	</form>
+																	<!-- </form> -->
 																</div>
 																<div class="bottom-content">
 																	<h4><a href="#">It Contains:</a></h4>
@@ -239,8 +241,10 @@
 														
 													</div>
 												</div>
-												</div>';
-											}
+												</div>
+												<?php
+												$i += 1;
+												endforeach;
 								            ?>
 						        		</div> <!-- End of .row -->
 							        	
@@ -257,3 +261,28 @@
 	        	</div> <!-- End of .container -->
 	        </div> <!-- End of .shop_single_page -->
 
+			<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    let totalProduct = document.getElementById('totalProduct');
+    function addToCart(productId, productName, productPrice) {
+        // console.log(productId, productName, productPrice);
+        // Sử dụng jQuery
+        $.ajax({
+            type: 'POST',
+            // Đường dẫ tới tệp PHP xử lý dữ liệu
+            url: './view/addToCart.php',
+            data: {
+                id: productId,
+                name: productName,
+                price: productPrice
+            },
+            success: function(response) {
+                totalProduct.innerText = response;
+                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    }
+</script>

@@ -5,7 +5,7 @@
 					<ul class="menuzord-menu">
 					  <li><a href="index.php">Trang chủ</a></li>
 					  <li><a href="shop.html">Giới thiệu</a></li>
-					  <li><a href="gallery-grid.html">Phòng trưng bày</a></li>
+					  <li><a href="gallery-grid.html">Danh sách</a></li>
 					  <li><a href="contact.html">Liên hệ</a></li>
 					</ul> <!-- End of .menuzord-menu -->
 				  </nav> <!-- End of #main_menu -->
@@ -313,7 +313,7 @@
 															</li>
 						                        			<li><a href=""><span class="fa fa-heart-o"></span></a></li>
 						                        		</ul>
-														</form>
+														<!-- </form> -->
 						                        	</div>
 						                        	<div class="bottom-content">
 						                        		<h4><a href="#">It Contains:</a></h4>
@@ -453,7 +453,7 @@
 
 			<!-- Request Quote ******************************* -->
 			<section class="why_choose_us">
-				<div class="theme_title_bg" style="background-image: url(images/background/1.jpg);">
+				<!-- <div class="theme_title_bg" style="background-image: url(images/background/1.jpg);">
 					<div class="theme_title center">
 						<div class="container">
 							<h2>Why to Choose Us</h2>
@@ -462,7 +462,7 @@
 						</div>
 					</div>
 					
-				</div>
+				</div> -->
 				
 				<div class="container">
 					 <!-- End of .theme_title_center -->
@@ -480,7 +480,7 @@
 								<div class="clear_fix"></div>
 							</div> <!-- End of .choose_us_item -->
 						</div> <!-- End of .col -->
-
+											
 						<!-- ______________ Item _____________ -->
 						<div class="col-md-6 col-sm-12 col-xs-12">
 							<div class="choose_us_item tran3s">

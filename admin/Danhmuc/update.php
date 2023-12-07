@@ -59,11 +59,7 @@
                                     <label for="maloai" class="font-medium text-sm text-slate-600 dark:text-slate-400">Category</label>
                                     <input type="text" name="tenloai" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="<?php if(isset($name)&&($name!="")) echo $name;?>">
                                     </div>
-                                    
-                                    
-                                    
-                                    
-
+                                
                                     <div class="">
                                         <input type="hidden" name="id" value="<?php if(isset($id)&&($id>0)) echo $id;?>">
                                         <input type="submit" value="Cập Nhật" name="capnhat" class="px-2 py-2 lg:px-4 bg-brand  text-white text-sm  rounded hover:bg-brand-600 border border-brand-500">

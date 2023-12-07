@@ -49,8 +49,6 @@
                                     <?php
                                 foreach ($listtaikhoan as $taikhoan) {
                                     extract($taikhoan);
-                                    $suatk="index.php?act=suatk&id=".$id;
-                                    $xoatk="index.php?act=xoatk&id=".$id;
                                     echo '<tr>
                                     <td><input type="checkbox" name="" id=""></td>
                                     <td>'.$id.'</td>
@@ -60,7 +58,6 @@
                                     <td>'.$address.'</td>
                                     <td>'.$tel.'</td>
                                     <td>'.$role.'</td>
-                                    <td><a href="'.$suatk.'"><input type="button" value="Sửa"></a> <a href="'.$xoatk.'"> <input type="button" value="Xóa"></a></td>
                                 </tr>';
                                 }
                                 ?>
