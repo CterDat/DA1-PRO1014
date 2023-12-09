@@ -37,8 +37,9 @@
                                         foreach ($listtbl as $tbl) {
                                             extract($tbl);
                                             $chitiet="index.php?act=chitiet&id_order=".$id_order;
-                                            
-                                            echo '<tr>
+                                            $xacnhan="index.php?act=suatbl&id_order=".$id_order;
+                                            if ($trangthai_text == "Hoàn thành") {
+                                                echo '<tr>
                                             <td>'.$id_order.'</td>
                                             <td>'.$hoten.'</td>
                                             <td>'.$sdt.'</td>
@@ -49,7 +50,19 @@
                                             <td>'.$trangthai_text.'</td>
                                             <td><a href="'.$chitiet.'"> <input type="button" value="Chi tiết" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
                                         </tr>';
-                                        }
+                                            }else{
+                                            echo '<tr>
+                                            <td>'.$id_order.'</td>
+                                            <td>'.$hoten.'</td>
+                                            <td>'.$sdt.'</td>
+                                            <td>'.$diachi.'</td>
+                                            <td>'.$tongtien.' <u>đ</u></td>
+                                            <td>'.$pttt_text.'</td>
+                                            <td>'.$ngaydathang.'</td>
+                                            <td>'.$trangthai_text.'</td>
+                                            <td><a href="'.$chitiet.'"> <input type="button" value="Chi tiết" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a><a href="'.$xacnhan.'"> <input type="button" value="Xác nhận" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
+                                        </tr>';
+                                        }}
                                     ?>
                                     
                                     </table>
