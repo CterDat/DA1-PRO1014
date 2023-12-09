@@ -4,7 +4,7 @@
 <!-- Mirrored from mannatthemes.com/robotech/default/admin-add-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2023 15:34:22 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Robotech - Admin & Dashboard Template</title>
+        <title>Admin DTCSHOPS & Dashboard</title>
         <meta  name="viewport"  content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta  content="Tailwind Multipurpose Admin & Dashboard Template"  name="description"/>
         <meta content="" name="Mannatthemes" />

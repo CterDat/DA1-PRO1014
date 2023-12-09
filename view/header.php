@@ -182,7 +182,7 @@
       ?>
       <div class="welcome">Chào mừng! <?=$user?></div>
 	  <div class="g-input f1 mb-30">
-  <select class="text-capitalize selectpicker" data-style="g-select" data-width="100%" id="login-select">
+  <select class="text-capitalize selectpicker"  data-width="100%" id="login-select">
     <option value="0" selected>Đăng nhập thành công</option>   
     <option value="dh">Đơn hàng</option>
     <option value="edit_taikhoan">Đổi mật khẩu</option>
@@ -217,7 +217,7 @@
       } else if (selectedValue === "admin" && role !== 1) {
         // Xử lý truy cập không được phép vào trang quản trị
       } else {
-        window.location.href = "http://localhost/du_an_1/admin/#";
+        window.location.href = "http://localhost/DA1-PRO1014-DTCShops/admin/#";
       }
     }	
   });
@@ -226,7 +226,7 @@
     } else {
       ?>
   <div class="g-input f1 mb-30">
-  <select class="text-capitalize selectpicker" data-style="g-select" data-width="100%" id="login-select">
+  <select class="text-capitalize selectpicker"  data-width="100%" id="login-select">
     <option value="0" selected>Bạn chưa có tài khoản</option>
     <option value="1">Đăng nhập</option>
     <option value="2">Đăng ký ở đây</option>
@@ -253,7 +253,7 @@
 </div>
 </div>
 <div class="cart_option float_left" style="margin: 0px;">
-	<a href="index.php?act=listCart"><button class="cart tran3s dropdown-toggle" id="cartDropdown"><i class="fa icon-icon-32846" aria-hidden="true"></i><span class="s_color_bg p_color" id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span></button></a>
+	<a href="index.php?act=listCart"><button class="cart tran3s" id="cartDropdown"><i class="fa icon-icon-32846" aria-hidden="true"></i><span class="s_color_bg p_color" id="totalProduct"><?= !empty($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ?></span></button></a>
 	<div class="cart-info">
 		<div>Giỏ hàng của tôi</div>
 		

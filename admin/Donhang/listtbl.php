@@ -51,6 +51,19 @@
                                             extract($tbl);
                                             $suatbl="index.php?act=suatbl&id_order=".$id_order;
                                             $xoatbl="index.php?act=xoatbl&id_order=".$id_order;
+                                            if ($trangthai_text == "Hoàn thành") {
+                                                echo '<tr>
+                                                <td>'.$id_order.'</td>
+                                                <td>'.$hoten.'</td>
+                                                <td>'.$sdt.'</td>
+                                                <td>'.$diachi.'</td>
+                                                <td>'.$tongtien.' <u>đ</u></td>
+                                                <td>'.$pttt_text.'</td>
+                                                <td>'.$ngaydathang.'</td>
+                                                <td>'.$trangthai_text.'</td>
+                                                <td><a href="'.$xoatbl.'"> <input type="button" value="Xóa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
+                                            </tr>';    
+                                            }else{
                                             echo '<tr>
                                             <td>'.$id_order.'</td>
                                             <td>'.$hoten.'</td>
@@ -62,7 +75,7 @@
                                             <td>'.$trangthai_text.'</td>
                                             <td><a href="'.$suatbl.'"><input type="button" value="Sửa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a> <a href="'.$xoatbl.'"> <input type="button" value="Xóa" class="px-2 py-2 lg:px-4 bg-transparent  text-brand text-sm  rounded transition hover:bg-brand-500 hover:text-white border border-brand font-medium"></a></td>
                                         </tr>';
-                                        }
+                                        }}
                                     ?>
                                     
                                     </table>
