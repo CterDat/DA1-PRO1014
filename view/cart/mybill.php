@@ -36,7 +36,7 @@
                                     <?php
                                         foreach ($listtbl as $tbl) {
                                             extract($tbl);
-                                            $chitiet="index.php?act=chitiet&id=".$id_order;
+                                            $chitiet="index.php?act=chitiet&id_order=".$id_order;
                                             
                                             echo '<tr>
                                             <td>'.$id_order.'</td>

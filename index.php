@@ -40,8 +40,10 @@
                 include "view/cart/mybill.php";
                 break;
             case 'chitiet':  
-                
-
+                if (isset($_GET['id_order'])&&($_GET['id_order']>0)){
+                    loadone_orderdetail($_GET['id_order']);
+                }
+                $listor=loadall_order();
                 include "view/cart/ctsp.php";
                 break;
             case "listCart":

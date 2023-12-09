@@ -41,7 +41,7 @@
                                 <div class="flex-auto p-0 md:p-4">                                   
 
                                     <div class="mb-2">
-                                    <label for="trangthai" class="font-medium text-sm text-slate-600 dark:text-slate-400">(1.Đang chờ | 2. Đã xác nhận | 3. Đang vận chuyển | 4. Hoàn thành)</label>
+                                    <label for="trangthai" class="font-medium text-sm text-slate-600 dark:text-slate-400">(1.Đang chờ | 2. Đã xác nhận | 3. Đang vận chuyển)</label>
                                     <input type="text" name="trangthai" class="form-input w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700" value="<?php if(isset($trangthai)&&($trangthai!="")) echo $trangthai;?>">
                                     </div>
                                     <div class="">

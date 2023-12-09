@@ -48,7 +48,7 @@
                                         foreach ($listdh as $donhang) {
                                             extract($donhang);
                                             
-                                            $xoadm="index.php?act=xoaor&id=".$id_order_detail;
+                                            $xoadm="index.php?act=xoaor&id_order_detail=".$id_order_detail;
                                             echo '<tr>
                                             <td>'.$id_order_detail.'</td>
                                             <td>'.$id_order.'</td>
