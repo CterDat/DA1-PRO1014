@@ -5,7 +5,7 @@
 			<ul class="menuzord-menu">
 				<li><a href="index.php">Trang chủ1</a></li>
 				<li><a href="shop.html">Giới thiệu1</a></li>
-				<li><a href="gallery-grid.html">Phòng trưng bày</a></li>
+				<li><a href="gallery-grid.html">Phòng trưng bà111y</a></li>
 				<li><a href="contact.html">Liên hệ</a></li>
 			</ul> <!-- End of .menuzord-menu -->
 		</nav> <!-- End of #main_menu -->
